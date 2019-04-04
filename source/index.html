@@ -6,7 +6,81 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="http://placehold.it/86x35" alt="Логотип магазина Мишка" width="86" height="35">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+      </nav>
+    </header>
+
+    <main class="page-main">
+
+      <section class="top">
+        <h1 class="top__header-text">Милые штуки ручной работы для дома</h1>
+        <ul class="top__things-list">
+          <li class="top__things-item">Предметы интерьера</li>
+          <li class="top__things-item">Детские игрушки</li>
+        </ul>
+      </section>
+
+      <acticle class="weekly-item">
+        <h2 class="weekly-item__name">Вязаные корзинки</h2>
+        <span class="weekly-item__label">Товар недели</span>
+        <p class="weekly-item__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <table class="weekly-item__parameters-list">
+          <tr>
+            <td>Цвет:</td>
+            <td>"Тиффани"/серый</td>
+          </tr>
+          <tr>
+            <td>Диаметр</td>
+            <td>25 см</td>
+          </tr>
+          <tr>
+            <td>Высота:</td>
+            <td>15 см</td>
+          </tr>
+        </table>
+        <img class="weekly-item__photo" src="http://placehold.it/260x315" alt="Фотография вязаных корзинок" width="260" height="315">
+        <p class="weekly-item__price">Цена: 990 руб.</p>
+        <a class="weekly-item__buy-button button" href="#">Заказать</a>
+      </acticle>
+
+      <section class="about-us">
+        <h2 class="about-us__header-text">Коротко о нас:</h2>
+        <ul class="about-us__advantages advantages">
+          <li class="advantages__item advantages__item--eco">Экологически чистые материалы</li>
+          <li class="advantages__item advantages__item--style">Скандинавский стиль по российской цене</li>
+          <li class="advantages__item advantages__item--likes">Увеличивает лайки на фотографиях</li>
+          <li class="advantages__item advantages__item--emotions">Связано вручную с любовью и умилением</li>
+          <li class="advantages__item advantages__item--maker">Поддержка отечественного производителя</li>
+          <li class="advantages__item advantages__item--pack">Поставляется в подарочной упаковке</li>
+        </ul>
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+
+      <ul class="page-footer__social social">
+        <li class="social__item social__item--instagram">
+          <span class="visually-hidden">Инстаграм</span>
+        </li>
+        <li class="social__item social__item--facebook">
+          <span class="visually-hidden">Фейсбук</span>
+        </li>
+        <li class="social__item social__item--twitter">
+          <span class="visually-hidden">Твиттер</span>
+        </li>
+      </ul>
+
+      <p class="copyright">
+        Разработано <a class="copyright__link" href="htmlacademy.ru"><span class="visually-hidden">HTML Academy</span></a>
+      </p>
+
+    </footer>
 
   </body>
 </html>
