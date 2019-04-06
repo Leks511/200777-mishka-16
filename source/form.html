@@ -9,6 +9,7 @@
 <body>
 
   <header class="page-header">
+
     <a class="page-header__logo">
       <img class="page-header__logo-image" src="http://placehold.it/86x35" alt="Логотип магазина Мишка" width="86"
         height="35">
@@ -16,7 +17,128 @@
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
     </nav>
+
   </header>
+
+  <main class="page-main">
+
+    <header class="title-header">
+      <h1 class="title-header__heading">Вязание на заказ</h1>
+    </header>
+
+    <section class="order">
+      <h2 class="order__header-text visually-hidden">Форма заказа</h2>
+
+      <p class="order__preview">
+        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить
+        детали.
+      </p>
+
+      <form class="order__form form" action="https://echo.htmlacademy.ru">
+        <fieldset class="form__fieldset">
+          <legend class="form__form-header">Тип</legend>
+          <ul class="form__options-list">
+            <li class="form__options-item">
+              <label class="form__label">
+                <input class="form__radio" checked type="radio" name="type">
+                Аксессуар для интерьера
+              </label>
+            </li>
+            <li class="form__options-item">
+              <label class="form__label">
+                <input class="form__radio" type="radio" name="type">
+                Детская игрушка
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__fieldset">
+          <legend class="form__form-header">Цвет</legend>
+          <ul class="form__options-list">
+            <li class="form__options-item">
+              <label class="form__label">
+                <input class="form__checkbox" type="checkbox" checked>
+                Белый
+              </label>
+            </li>
+            <li class="form__options-item">
+              <label class="form__label">
+                <input class="form__checkbox" type="checkbox" checked>
+                Серый
+              </label>
+            </li>
+            <li class="form__options-item">
+              <label class="form__label">
+                <input class="form__checkbox" type="checkbox">
+                "Тиффани"
+              </label>
+            </li>
+            <li class="form__options-item">
+              <label class="form__label">
+                <input class="form__checkbox" type="checkbox">
+                Черный
+              </label>
+            </li>
+            <li class="form__options-item">
+              <label class="form__label">
+                <input class="form__checkbox" type="checkbox">
+                Розовый
+              </label>
+            </li>
+            <li class="form__options-item">
+              <label class="form__label">
+                <input class="form__checkbox" type="checkbox">
+                Оранжевый
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__fieldset">
+          <legend class="form__form-header">ФИО</legend>
+          <p class="form__row">
+            <label class="form__label" for="client-name">Имя:</label>
+            <input class="form__label-field" name="client-name" id="client-name" required type="text" placeholder="Введите ваше имя*">
+          </p>
+          <p class="form__row">
+            <label class="form__label" for="client-surname">Фамилия:</label>
+            <input class="form__label-field" name="client-surname" id="client-surname" required type="text" placeholder="Укажите фамилию*">
+          </p>
+          <p class="form__row">
+            <label class="form__label" for="client-patronymic">Отчество:</label>
+            <input class="form__label-field" name="client-patronymic" id="client-patronymic" type="text" placeholder="Отчество, если желаете">
+          </p>
+        </fieldset>
+
+        <fieldset class="form__fieldset">
+          <legend class="form__form-header">ТЕЛ</legend>
+          <p class="form__row">
+            <input class="form__client-tel-number" name="client-tel-number" type="tel" required pattern="+7 [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 XXX XXX XX XX*">
+          </p>
+        </fieldset>
+
+        <fieldset class="form__fieldset">
+          <legend class="form__form-header">E-MAIL</legend>
+          <p class="form__row">
+            <input class="form__client-email" name="client-email" type="email" required
+              placeholder="Ваш Email*">
+          </p>
+        </fieldset>
+
+        <fieldset class="form__fieldset">
+          <legend class="form__form-header">ДОП</legend>
+          <label class="visually-hidden" for="client-wishes">Поле для пожеланий клиента</label>
+          <textarea class="form__wishes" name="client-wishes" id="client-wishes" cols="30" rows="10" placeholder="Опишите все ваши пожелания по заказу"></textarea>
+        </fieldset>
+
+        <small class="form__legend"><sup>*</sup>Поля обязательны для заполнения</small>
+
+        <button class="form__submit-button button" type="button">Отправить заказ</button>
+      </form>
+    </section>
+
+  </main>
 
   <footer class="page-footer">
 
