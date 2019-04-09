@@ -1,19 +1,16 @@
 .advantages {
   @include list-reset;
-
-  &__item {
-    position: relative;
-
-    margin-bottom: 30px;
-
-    color: $main-color;
-    font-size: 17px;
-    line-height: 20px;
-    font-weight: 700;
-  }
 }
 
 .advantages__item {
+  position: relative;
+
+  margin-bottom: 30px;
+
+  color: $main-color;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
 
   &::before {
     content: "";
@@ -70,5 +67,4 @@
     background-image: url("../img/icon-feature-gift.svg");
     background-position: 0 0;
   }
-
 }
