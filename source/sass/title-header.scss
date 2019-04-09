@@ -1,0 +1,11 @@
+.title-header {
+  background-color: #f1f1f1;
+
+  &__heading {
+    margin: 0;
+
+    color: $main-color;
+    font-size: 27px;
+    line-height: 30px;
+  }
+}
