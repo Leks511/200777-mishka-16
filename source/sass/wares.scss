@@ -1,0 +1,58 @@
+.wares {
+  @include list-reset;
+
+  &__item-info {
+    border: 1px solid #ededed;
+  }
+
+  &__item-description {
+    border-bottom: 1px solid #ececec;
+  }
+
+  &__name {
+    margin: 0;
+    margin-bottom: 5px;
+
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+
+  &__parameters {
+    margin: 0;
+
+    color: $second-color;
+    font-size: 13px;
+    line-height: 30px;
+  }
+
+  &__buying {
+    margin: 0;
+
+    color: $main-color;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+}
+
+.wares__buy {
+  position: relative;
+
+  text-decoration: none;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    width: 20px;
+    height: 19px;
+
+    background-image: url("../img/icon-cart.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}

@@ -1,0 +1,13 @@
+.parameters {
+  color: $second-color;
+  font-size: 15px;
+  line-height: 20px;
+
+  border-collapse: collapse;
+
+  &__parameter {
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid #ececec;
+  }
+}

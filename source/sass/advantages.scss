@@ -1,0 +1,70 @@
+.advantages {
+  @include list-reset;
+}
+
+.advantages__item {
+  position: relative;
+
+  margin-bottom: 30px;
+
+  color: $main-color;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+
+    background-repeat: no-repeat;
+  }
+
+  &--eco::before {
+    width: 32px;
+    height: 37px;
+
+    background-image: url("../img/icon-feature-flower.svg");
+    background-position: 0 0;
+  }
+
+  &--style::before {
+    width: 47px;
+    height: 27px;
+
+    background-image: url("../img/icon-feature-money.svg");
+    background-position: 0 0;
+  }
+
+  &--likes::before {
+    width: 33px;
+    height: 28px;
+
+    background-image: url("../img/icon-feature-heart.svg");
+    background-position: 0 0;
+  }
+
+  &--emotions::before {
+    width: 34px;
+    height: 34px;
+
+    background-image: url("../img/icon-feature-ball.svg");
+    background-position: 0 0;
+  }
+
+  &--maker::before {
+    width: 54px;
+    height: 23px;
+
+    background-image: url("../img/icon-feature-rocket.svg");
+    background-position: 0 0;
+  }
+
+  &--pack::before {
+    width: 33px;
+    height: 32px;
+
+    background-image: url("../img/icon-feature-gift.svg");
+    background-position: 0 0;
+  }
+}

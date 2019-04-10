@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff"), url("../fonts/opensans.woff2"), url("../fonts/opensansbold.woff"), url("../fonts/opensansbold.woff2");
+}
+
+body {
+  margin: 0;
+
+  color: $main-color;
+  font-size: 15px;
+  line-height: 24px;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
