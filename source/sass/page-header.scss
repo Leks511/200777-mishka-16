@@ -1,7 +1,46 @@
 .page-header {
   min-height: 78px;
+  display: flex;
 
   background-color: #ffffff;
   border-top: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 86px;
+    height: 35px;
+    margin-left: auto;
+  }
+
+  &__main-nav {
+    margin-left: 67px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    background-color: transparent;
+    border-top: none;
+    border-bottom: none;
+
+    &__container {
+      padding: 0;
+      margin: 0;
+      width: auto;
+    }
+
+    &__logo {
+      display: none;
+    }
+
+    &__main-nav {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
 }
