@@ -8,11 +8,55 @@
   <body>
 
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="http://placehold.it/86x35" alt="Логотип магазина Мишка" width="86" height="35">
+      <a class="page-header__logo logo">
+        <img class="page-header__logo-image logo-image" src="http://placehold.it/86x35" alt="Логотип магазина Мишка" width="86" height="35">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
+
+        <ul class="main-nav__pages-list pages-list">
+          <li class="pages-list__item">
+            <a class="pages-list__link" href="#">
+              Каталог товаров
+            </a>
+          </li>
+          <li class="pages-list__item">
+            <a class="pages-list__link" href="#">
+              Вязание на заказ
+            </a>
+          </li>
+        </ul>
+
+        <ul class="main-nav__user-interface user-interface">
+          <li class="user-interface__item">
+            <a class="user-interface__search" href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="user-interface__item">
+            <a class="user-interface__cart" href="#">
+              Корзина: пока пуста
+            </a>
+          </li>
+        </ul>
+
+        <div class="main-nav__additionally">
+          <ul class="main-nav__news-list news-list">
+            <li class="news-list__item">
+              <a class="news-list__link" href="#">
+                Новые поступления
+              </a>
+            </li>
+            <li class="news-list__item">
+              <a class="news-list__link" href="#">
+                Распродажа
+              </a>
+            </li>
+          </ul>
+          <span class="main-nav__delivery-label delivery-label">
+            Бесплатная доставка по России
+          </span>
+        </div>
       </nav>
     </header>
 
