@@ -24,6 +24,9 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
+    position: relative;
+    margin-bottom: -40px;
+
     background-color: transparent;
     border-top: none;
     border-bottom: none;

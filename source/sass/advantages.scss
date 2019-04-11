@@ -5,7 +5,8 @@
 .advantages__item {
   position: relative;
 
-  margin-bottom: 30px;
+  margin-bottom: 32px;
+  padding-top: 55px;
 
   color: $main-color;
   font-size: 17px;
@@ -16,6 +17,8 @@
     content: "";
 
     position: absolute;
+    top: 0;
+    left: 0;
 
     background-repeat: no-repeat;
   }
