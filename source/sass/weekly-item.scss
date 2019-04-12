@@ -1,7 +1,7 @@
 .weekly-item {
   position: relative;
 
-  width: 260px;
+  width: 100%;
   padding: 30px 0;
 
   &::after {
@@ -180,7 +180,7 @@
 
   .weekly-item__photo-container {
     top: -50px;
-    right: 0;
+    right: 50px;
 
     width: 525px;
     height: 636px;

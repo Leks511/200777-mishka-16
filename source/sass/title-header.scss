@@ -1,11 +1,28 @@
 .title-header {
+  width: 100%;
+  min-height: 176px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   background-color: #f1f1f1;
 
   &__heading {
     margin: 0;
 
+    text-align: center;
     color: $main-color;
     font-size: 27px;
     line-height: 30px;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .title-header__heading {
+    width: 700px;
+
+    font-size: 53px;
+    line-height: 57px;
   }
 }

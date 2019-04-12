@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Мишка</title>
 </head>
@@ -10,13 +11,65 @@
 <body>
 
   <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="http://placehold.it/86x35" alt="Логотип магазина Мишка" width="86"
-        height="35">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-    </nav>
+    <div class="page-header__container container">
+      <a class="page-header__logo logo">
+        <img class="page-header__logo-image logo-image" src="http://placehold.it/86x35" alt="Логотип магазина Мишка"
+          width="86" height="35">
+      </a>
+
+      <nav class="page-header__main-nav main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+
+        <div class="main-nav__menu-wrapper">
+          <a class="main-nav__logo" href="#">
+            <img class="main-nav__logo-image" src="http://placehold.it/112x46" alt="Логотип магазина Мишка" width="112"
+              height="46">
+          </a>
+
+          <ul class="main-nav__pages-list pages-list">
+            <li class="pages-list__item">
+              <a class="pages-list__link" href="#">
+                Каталог товаров
+              </a>
+            </li>
+            <li class="pages-list__item">
+              <a class="pages-list__link" href="#">
+                Вязание на заказ
+              </a>
+            </li>
+          </ul>
+
+          <ul class="main-nav__user-interface user-interface">
+            <li class="user-interface__item user-interface__item--search">
+              <a class="user-interface__link user-interface__link--search" href="#">
+                <span class="visually-hidden">Поиск по сайту</span>
+              </a>
+            </li>
+            <li class="user-interface__item user-interface__item--cart">
+              <a class="user-interface__link user-interface__link--cart" href="#">
+                Корзина: пока пуста
+              </a>
+            </li>
+          </ul>
+
+          <ul class="main-nav__news-list news-list">
+            <li class="news-list__item">
+              <a class="news-list__link" href="#">
+                Новые поступления
+              </a>
+            </li>
+            <li class="news-list__item">
+              <a class="news-list__link" href="#">
+                Распродажа
+              </a>
+            </li>
+          </ul>
+          <span class="main-nav__delivery-label delivery-label">
+            Бесплатная доставка по России
+          </span>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main class="page-main">
@@ -27,53 +80,55 @@
         <h1 class="title-header__heading">Каталог товаров</h1>
       </header>
 
-      <ul class="catalog__list wares">
-        <li class="wares__item">
-          <img class="wares__photo" src="http://placehold.it/260x195" width="260" height="195" alt="Фотография игрушки зайца">
-          <div class="wares__item-info">
-            <div class="wares__item-description">
-              <h2 class="wares__name">Зайчик-попрыгайчик</h2>
-              <p class="wares__parameters">Рост 30 см, вес 200 г</p>
-            </div>
-            <p class="wares__buying">
-              <span class="wares__price">1200 руб.</span>
-              <a class="wares__buy" href="#">
-                <span class="visually-hidden">Заказать</span>
-              </a>
-            </p>
-          </div>
-        </li>
-        <li class="wares__item">
-          <img class="wares__photo" src="http://placehold.it/260x195" width="260" height="195" alt="Фотография корзинки для белья">
-          <div class="wares__item-info">
-            <div class="wares__item-description">
-              <h2 class="wares__name">Корзинка для белья</h2>
-              <p class="wares__parameters">Диаметр 15 см, высота 10 см</p>
-            </div>
-            <p class="wares__buying">
-              <span class="wares__price">690 руб.</span>
-              <a class="wares__buy" href="#">
-                <span class="visually-hidden">Заказать</span>
-              </a>
-            </p>
-          </div>
-        </li>
-        <li class="wares__item">
-          <img class="wares__photo" src="http://placehold.it/260x195" width="260" height="195" alt="Фотография большой корзинки для игрушек">
-          <div class="wares__item-info">
+      <div class="catalog__container container">
+        <ul class="catalog__list wares">
+          <li class="wares__item">
+            <img class="wares__photo" src="http://placehold.it/260x195" width="260" height="195" alt="Фотография игрушки зайца">
             <div class="wares__item-info">
-              <h2 class="wares__name">Большая корзинка для игрушек</h2>
-              <p class="wares__parameters">Диаметр 30 см, высота 30 см</p>
+              <div class="wares__item-description">
+                <h2 class="wares__name">Зайчик-попрыгайчик</h2>
+                <p class="wares__parameters">Рост 30 см, вес 200 г</p>
+              </div>
+              <p class="wares__buying">
+                <span class="wares__price">1200 руб.</span>
+                <a class="wares__buy" href="#">
+                  <span class="visually-hidden">Заказать</span>
+                </a>
+              </p>
             </div>
-            <p class="wares__buying">
-              <span class="wares__price">1500 руб.</span>
-              <a class="wares__buy" href="#">
-                <span class="visually-hidden">Заказать</span>
-              </a>
-            </p>
-          </div>
-        </li>
-      </ul>
+          </li>
+          <li class="wares__item">
+            <img class="wares__photo" src="http://placehold.it/260x195" width="260" height="195" alt="Фотография корзинки для белья">
+            <div class="wares__item-info">
+              <div class="wares__item-description">
+                <h2 class="wares__name">Корзинка для белья</h2>
+                <p class="wares__parameters">Диаметр 15 см, высота 10 см</p>
+              </div>
+              <p class="wares__buying">
+                <span class="wares__price">690 руб.</span>
+                <a class="wares__buy" href="#">
+                  <span class="visually-hidden">Заказать</span>
+                </a>
+              </p>
+            </div>
+          </li>
+          <li class="wares__item">
+            <img class="wares__photo" src="http://placehold.it/260x195" width="260" height="195" alt="Фотография большой корзинки для игрушек">
+            <div class="wares__item-info">
+              <div class="wares__item-info">
+                <h2 class="wares__name">Большая корзинка для игрушек</h2>
+                <p class="wares__parameters">Диаметр 30 см, высота 30 см</p>
+              </div>
+              <p class="wares__buying">
+                <span class="wares__price">1500 руб.</span>
+                <a class="wares__buy" href="#">
+                  <span class="visually-hidden">Заказать</span>
+                </a>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
 
     </section>
 
