@@ -147,9 +147,15 @@
     &__things-item {
       width: 334px;
     }
+  }
+}
 
-    &__things-link {
-      width: 274px;
-    }
+@media (min-width: $desktop-width) {
+  .index-title__things-list {
+    width: 1050px;
+  }
+
+  .index-title__things-item {
+    width: 525px;
   }
 }

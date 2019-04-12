@@ -11,3 +11,9 @@
     margin-bottom: 50px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .about-us__container {
+    width: 700px;
+  }
+}

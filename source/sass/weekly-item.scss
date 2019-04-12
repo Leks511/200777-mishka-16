@@ -143,3 +143,56 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .weekly-item {
+    padding: 120px 0;
+  }
+
+  .weekly-item__title {
+    position: relative;
+    z-index: 1;
+
+    width: 700px;
+    margin-right: auto;
+    margin-left: 30px;
+    order: 1;
+  }
+
+  .weekly-item__label {
+    margin-left: 35px;
+    order: 0;
+  }
+
+  .weekly-item__info {
+    margin-left: 200px;
+  }
+
+  .weekly-item__description {
+    margin-bottom: 55px;
+
+    font-size: 17px;
+  }
+
+  .weekly-item__parameters-list {
+    margin-bottom: 110px;
+  }
+
+  .weekly-item__photo-container {
+    top: -50px;
+    right: 0;
+
+    width: 525px;
+    height: 636px;
+  }
+
+  .weekly-item__photo {
+    width: 525px;
+    height: 636px;
+  }
+
+  .weekly-item__price {
+    margin-bottom: 33px;
+  }
+}
+

@@ -20,12 +20,13 @@
 
     position: absolute;
     top: 0;
-    left: 0;
 
     background-repeat: no-repeat;
   }
 
   &--eco::before {
+    left: 9px;
+
     width: 32px;
     height: 37px;
 
@@ -34,6 +35,8 @@
   }
 
   &--style::before {
+    left: 0;
+
     width: 47px;
     height: 27px;
 
@@ -42,6 +45,8 @@
   }
 
   &--likes::before {
+    left: 8px;
+
     width: 33px;
     height: 28px;
 
@@ -50,6 +55,8 @@
   }
 
   &--emotions::before {
+    left: 3px;
+
     width: 34px;
     height: 34px;
 
@@ -58,6 +65,8 @@
   }
 
   &--maker::before {
+    left: -6px;
+
     width: 54px;
     height: 23px;
 
@@ -66,6 +75,8 @@
   }
 
   &--pack::before {
+    left: 3px;
+
     width: 33px;
     height: 32px;
 
@@ -108,5 +119,15 @@
     &--pack {
       order: 5;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    width: 700px;
+  }
+
+  .advantages__item {
+    width: 350px;
   }
 }

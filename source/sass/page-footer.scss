@@ -28,7 +28,6 @@
   }
 
   .page-footer__container {
-    width: 668px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -56,5 +55,15 @@
     width: 30%;
     display: flex;
     align-items: center;
+  }
+
+  .page-footer__copyright-text {
+    margin-left: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    width: 1200px;
   }
 }
