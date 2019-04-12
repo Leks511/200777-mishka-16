@@ -1,9 +1,16 @@
 .page-footer {
+  width: 320px;
   min-height: 160px;
 
   background-color: #f1f1f1;
 
   &__social {
+    width: 260px;
+
     border-bottom: 1px solid #e5e5e5;
+  }
+
+  &__copyright-text {
+    margin: 0;
   }
 }

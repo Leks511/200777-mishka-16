@@ -1,10 +1,12 @@
 .advantages {
   @include list-reset;
+  width: 260px;
 }
 
 .advantages__item {
   position: relative;
 
+  width: 260px;
   margin-bottom: 32px;
   padding-top: 55px;
 
