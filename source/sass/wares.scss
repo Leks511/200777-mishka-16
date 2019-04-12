@@ -117,7 +117,7 @@
   }
 
   .wares__item {
-    display: block;
+    flex-direction: column;
     width: 316px;
     margin-right: 51px;
 
