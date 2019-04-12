@@ -3,30 +3,31 @@
   padding: 0;
 
   width: 260px;
-  padding: 30px 0 15px;
 
   list-style-type: none;
+
+  &__item {
+    margin-bottom: 30px;
+  }
 
   &__photo {
     width: 260px;
     height: 195px;
-
-    margin-bottom: -6px;
   }
 
   &__item-info {
-    padding: 25px 27px;
+    padding: 0 27px;
 
     border: 1px solid #ededed;
   }
 
   &__item-description {
-    border-bottom: 1px solid #ececec;
+    padding: 22px 0;
   }
 
   &__name {
     margin: 0;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
 
     font-size: 17px;
     line-height: 24px;
@@ -43,11 +44,14 @@
 
   &__buying {
     margin: 0;
+    padding: 20px 0;
 
     color: $main-color;
     font-size: 15px;
     line-height: 24px;
     font-weight: 700;
+
+    border-top: 1px solid #ececec;
   }
 }
 
@@ -69,5 +73,71 @@
     background-image: url("../img/icon-cart.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .wares {
+    width: 100%;
+  }
+
+  .wares__item {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .wares__photo {
+    width: 334px;
+    height: 334px;
+  }
+
+  .wares__item-info {
+    width: 250px;
+    min-height: 332px;
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .wares__item-description {
+    width: 100%;
+  }
+
+  .wares__buying {
+    width: 100%;
+    margin-top: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wares {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .wares__item {
+    display: block;
+    width: 316px;
+    margin-right: 51px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
+  .wares__item-info {
+    min-height: 0;
+    width: 260px;
+  }
+
+  .wares__photo-container {
+    width: 316px;
+    height: 462px;
+  }
+
+  .wares__photo {
+    width: 316px;
+    height: 462px;
   }
 }

@@ -133,11 +133,16 @@
 
     &__intro {
       min-height: 626px;
+      display: flex;
+
       background: none;
     }
 
     &__heading {
-      margin: 163px auto 0;
+      width: 700px;
+      margin-top: 163px;
+
+      text-align: center;
     }
 
     &__things-list {
@@ -167,7 +172,7 @@
 
   .index-title__things-list {
     width: 1050px;
-    margin: 0 auto -13px;
+    margin: 14px auto 0;
   }
 
   .index-title__things-item {
