@@ -5,3 +5,9 @@
     margin-bottom: 30px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .about-us__title {
+    margin-bottom: 50px;
+  }
+}
