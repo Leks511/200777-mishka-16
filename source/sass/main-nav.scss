@@ -1,80 +1,77 @@
-.main-nav {
-  &__logo {
-    display: none;
-  }
+.main-nav__logo {
+  display: none;
+}
 
-  &__menu-wrapper {
-    width: 320px;
-    display: none;
-  }
+.main-nav__menu-wrapper {
+  width: 320px;
+  display: none;
+}
 
-  &__toggle {
-    width: 14px;
-    height: 20px;
+.main-nav__toggle {
+  width: 14px;
+  height: 20px;
 
-    border: none;
+  border: none;
 
-    cursor: pointer;
-  }
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
-  .main-nav {
-    &__toggle {
-      display: none;
-      width: 14px;
-      height: 20px;
-    }
+  .main-nav__toggle {
+    display: none;
+    width: 14px;
+    height: 20px;
+  }
 
-    &__menu-wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;
-    }
+  .main-nav__menu-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
 
-    &__logo {
-      display: flex;
-      align-items: center;
-      width: 320px;
-      height: 89px;
-      padding-left: 50px;
-      order: 0;
+  .main-nav__logo {
+    display: flex;
+    align-items: center;
+    width: 320px;
+    height: 89px;
+    padding-left: 50px;
+    order: 0;
 
-      background-color: #ffffff;
-      border-bottom: 1px solid #e7e7e7;
-    }
+    background-color: #ffffff;
+    border-bottom: 1px solid #e7e7e7;
+  }
 
-    &__user-interface {
-      display: flex;
-      width: 398px;
-      order: 1;
+  .main-nav__user-interface {
+    display: flex;
+    width: 398px;
+    order: 1;
 
-      background-color: #ffffff;
-      border-bottom: 1px solid #e7e7e7;
-    }
+    background-color: #ffffff;
+    border-bottom: 1px solid #e7e7e7;
+  }
 
-    &__pages-list {
-      @include list-reset;
+  .main-nav__pages-list {
+    margin: 0;
+    padding: 0;
 
-      width: 330px;
-      margin-top: 16px;
-      margin-right: auto;
-      padding-left: 50px;
-      order: 2;
-    }
+    width: 330px;
+    margin-top: 16px;
+    margin-right: auto;
+    padding-left: 50px;
+    order: 2;
 
-    &__delivery-label {
-      margin-top: 16px;
-      padding-right: 50px;
-      order: 3;
-    }
+    list-style: none;
+  }
+
+  .main-nav__delivery-label {
+    margin-top: 16px;
+    padding-right: 50px;
+    order: 3;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .main-nav {
-    &__pages-list {
-      order: 0;
-    }
+  .main-nav__pages-list {
+    order: 0;
   }
 }

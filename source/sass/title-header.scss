@@ -3,16 +3,16 @@
   min-height: 176px;
 
   background-color: #f1f1f1;
+}
 
-  &__heading {
-    margin: 0;
+.title-header__heading {
+  margin: 0;
 
-    text-align: center;
-    color: $main-color;
-    font-size: 27px;
-    line-height: 30px;
-    font-weight: 700;
-  }
+  text-align: center;
+  color: $main-color;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
 }
 
 @media (min-width: $tablet-width) {

@@ -1,9 +1,13 @@
 .news-list {
-  @include list-reset;
+  margin: 0;
+  padding: 0;
+
   display: none;
 
-  &__link {
-    color: $main-color;
-    text-decoration: none;
-  }
+  list-style: none;
+}
+
+.news-list__link {
+  color: $main-color;
+  text-decoration: none;
 }

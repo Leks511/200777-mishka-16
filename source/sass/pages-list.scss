@@ -1,18 +1,16 @@
-.pages-list {
-  &__link {
-    color: $main-color;
-    font-weight: 700;
-    text-decoration: none;
-  }
+.pages-list__link {
+  color: $main-color;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 @media (min-width: $tablet-width) {
   .pages-list {
     display: flex;
     width: 330px;
+  }
 
-    &__item {
-      margin-right: 35px;
-    }
+  .pages-list__item {
+    margin-right: 35px;
   }
 }

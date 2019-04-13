@@ -1,24 +1,26 @@
 .user-interface {
-  @include list-reset;
+  margin: 0;
+  padding: 0;
 
-  &__link {
-    color: $main-color;
-    font-size: 17px;
-    line-height: 24px;
-    text-decoration: none;
-    font-weight: 700;
+  list-style: none;
+}
 
-    cursor: pointer;
-  }
+.user-interface__link {
+  color: $main-color;
+  font-size: 17px;
+  line-height: 24px;
+  text-decoration: none;
+  font-weight: 700;
+
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
-  .user-interface {
-    &__item {
-      display: flex;
-      align-items: center;
-    }
+  .user-interface__item {
+    display: flex;
+    align-items: center;
   }
+
 
   .user-interface__item--search {
     border-left: 1px solid #ececec;
