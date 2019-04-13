@@ -78,6 +78,7 @@
 
   .main-nav__delivery-label {
     margin-top: 16px;
+    padding-right: 50px;
     order: 3;
   }
 }
@@ -128,6 +129,7 @@
   }
 
   .main-nav__delivery-label {
+    padding-right: 0;
     order: 4;
     display: block;
     width: 525px;
