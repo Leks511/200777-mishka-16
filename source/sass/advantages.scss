@@ -1,6 +1,9 @@
 .advantages {
-  @include list-reset;
+  margin: 0;
+  padding: 0;
   width: 260px;
+
+  list-style: none;
 }
 
 .advantages__item {
