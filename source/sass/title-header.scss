@@ -1,11 +1,45 @@
 .title-header {
+  width: 100%;
+  min-height: 176px;
+
   background-color: #f1f1f1;
+}
 
-  &__heading {
-    margin: 0;
+.title-header__heading {
+  margin: 0;
 
-    color: $main-color;
-    font-size: 27px;
-    line-height: 30px;
+  text-align: center;
+  color: $main-color;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+@media (min-width: $tablet-width) {
+  .title-header {
+    min-height: 320px;
+    display: flex;
+    align-items: center;
+  }
+
+  .title-header__heading {
+    width: 700px;
+    margin: 90px auto 0;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .title-header {
+    min-height: 350px;
+  }
+
+  .title-header__heading {
+    width: 700px;
+
+    font-size: 53px;
+    line-height: 57px;
   }
 }

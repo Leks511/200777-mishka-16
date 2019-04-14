@@ -1,11 +1,17 @@
 .advantages {
-  @include list-reset;
+  margin: 0;
+  padding: 0;
+  width: 260px;
+
+  list-style: none;
 }
 
 .advantages__item {
   position: relative;
 
-  margin-bottom: 30px;
+  width: 260px;
+  margin-bottom: 32px;
+  padding-top: 55px;
 
   color: $main-color;
   font-size: 17px;
@@ -16,11 +22,14 @@
     content: "";
 
     position: absolute;
+    top: 0;
 
     background-repeat: no-repeat;
   }
 
   &--eco::before {
+    left: 9px;
+
     width: 32px;
     height: 37px;
 
@@ -29,6 +38,8 @@
   }
 
   &--style::before {
+    left: 0;
+
     width: 47px;
     height: 27px;
 
@@ -37,6 +48,8 @@
   }
 
   &--likes::before {
+    left: 8px;
+
     width: 33px;
     height: 28px;
 
@@ -45,6 +58,8 @@
   }
 
   &--emotions::before {
+    left: 3px;
+
     width: 34px;
     height: 34px;
 
@@ -53,6 +68,8 @@
   }
 
   &--maker::before {
+    left: -6px;
+
     width: 54px;
     height: 23px;
 
@@ -61,10 +78,59 @@
   }
 
   &--pack::before {
+    left: 3px;
+
     width: 33px;
     height: 32px;
 
     background-image: url("../img/icon-feature-gift.svg");
     background-position: 0 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    width: 668px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .advantages__item {
+    width: 300px;
+
+    &--eco {
+      order: 0;
+    }
+
+    &--style {
+      order: 2;
+    }
+
+    &--likes {
+      order: 4;
+    }
+
+    &--emotions {
+      order: 1;
+    }
+
+    &--maker {
+      order: 3;
+    }
+
+    &--pack {
+      order: 5;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    width: 700px;
+  }
+
+  .advantages__item {
+    width: 350px;
   }
 }

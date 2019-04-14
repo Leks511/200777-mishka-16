@@ -1,0 +1,15 @@
+.catalog {
+  padding: 30px 0 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    padding: 80px 0 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    padding: 130px 0 25px;
+  }
+}

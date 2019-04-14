@@ -1,0 +1,38 @@
+.pages-list__link {
+  color: $main-color;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .pages-list {
+    display: flex;
+  }
+
+  .pages-list__item {
+    margin-right: 35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .pages-list {
+    align-items: stretch;
+  }
+
+  .pages-list__item {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+
+    &:first-child {
+      border-right: 1px solid #e7e7e7;
+    }
+  }
+
+  .pages-list__link {
+    display: block;
+    padding: 0 37px;
+
+    font-size: 17px;
+  }
+}

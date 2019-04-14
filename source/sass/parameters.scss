@@ -4,10 +4,17 @@
   line-height: 20px;
 
   border-collapse: collapse;
+}
 
-  &__parameter {
-    padding-bottom: 10px;
+.parameters__parameter {
+  padding-top: 6px;
+  padding-bottom: 10px;
 
-    border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+}
+
+@media (min-width: $desktop-width) {
+  .parameters__parameter {
+    padding-bottom: 12px;
   }
 }

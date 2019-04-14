@@ -1,7 +1,17 @@
 .button {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  padding: 15px 20px;
+
+  text-align: center;
   color: $second-color;
   font-size: 17px;
   line-height: 20px;
+  font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
+
+  background-color: transparent;
+  border: 2px solid $second-color;
 }

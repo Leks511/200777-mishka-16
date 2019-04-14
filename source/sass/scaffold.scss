@@ -1,13 +1,69 @@
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/opensans.woff"), url("../fonts/opensans.woff2"), url("../fonts/opensansbold.woff"), url("../fonts/opensansbold.woff2");
+  src: url("../fonts/opensans.woff"), url("../fonts/opensans.woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url("../fonts/opensansbold.woff"), url("../fonts/opensansbold.woff2");
+  font-weight: 700;
+  font-style: normal;
 }
 
 body {
+  min-width: 320px;
   margin: 0;
+  padding: 0;
 
   color: $main-color;
   font-size: 15px;
   line-height: 24px;
   font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+
+  background-color: #f9f9f9;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 260px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: 668px;
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: 1050px;
+    padding: 0 50px;
+  }
 }
