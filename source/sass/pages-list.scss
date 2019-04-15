@@ -1,10 +1,24 @@
 .pages-list__link {
+  display: block;
+  padding: 27px 0 27px 75px;
   color: $main-color;
   font-weight: 700;
   text-decoration: none;
+
+  border-top: 1px solid #ececec;
 }
 
 @media (min-width: $tablet-width) {
+  .pages-list__link {
+    display: inline;
+    padding: 0;
+    color: $main-color;
+    font-weight: 700;
+    text-decoration: none;
+
+    border-top: none;
+  }
+
   .pages-list {
     display: flex;
   }

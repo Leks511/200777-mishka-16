@@ -3,16 +3,27 @@
 }
 
 .user-interface__link {
+  display: block;
+  padding: 27px 0 27px 75px;
+
   color: $main-color;
   font-size: 17px;
   line-height: 24px;
   text-decoration: none;
   font-weight: 700;
 
+  border-top: 1px solid #ececec;
   cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
+  .user-interface__link {
+    display: inline;
+    padding: 0;
+
+    border-top: none;
+  }
+
   .user-interface {
     justify-content: flex-end;
   }

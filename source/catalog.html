@@ -10,66 +10,67 @@
 
 <body>
 
-  <header class="page-header page-header--other-page">
-    <div class="page-header__container container">
-      <a class="page-header__logo logo">
-        <img class="page-header__logo-image logo-image" src="http://placehold.it/86x35" alt="Логотип магазина Мишка"
-          width="86" height="35">
-      </a>
+  <header class="page-header">
+    <a class="page-header__logo logo">
+      <img class="page-header__logo-image logo-image" src="http://placehold.it/86x35" alt="Логотип магазина Мишка"
+        width="86" height="35">
+    </a>
 
-      <nav class="page-header__main-nav main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <nav class="page-header__main-nav main-nav">
+      <button class="main-nav__toggle main-nav__toggle--inactive" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+        <span class="main-nav__toggle-line"></span>
+      </button>
 
-        <div class="main-nav__menu-wrapper">
-          <a class="main-nav__logo" href="#">
-            <img class="main-nav__logo-image" src="http://placehold.it/112x46" alt="Логотип магазина Мишка" width="112"
-              height="46">
-          </a>
+      <div class="main-nav__menu-wrapper main-nav__menu-wrapper--nojs main-nav__menu-wrapper--active">
+        <a class="main-nav__logo" href="#">
+          <img class="main-nav__logo-image" src="http://placehold.it/112x46" alt="Логотип магазина Мишка" width="112"
+            height="46">
+        </a>
 
-          <ul class="main-nav__pages-list pages-list">
-            <li class="pages-list__item">
-              <a class="pages-list__link" href="#">
-                Каталог товаров
-              </a>
-            </li>
-            <li class="pages-list__item">
-              <a class="pages-list__link" href="#">
-                Вязание на заказ
-              </a>
-            </li>
-          </ul>
+        <ul class="main-nav__pages-list pages-list">
+          <li class="pages-list__item">
+            <a class="pages-list__link" href="#">
+              Каталог товаров
+            </a>
+          </li>
+          <li class="pages-list__item">
+            <a class="pages-list__link" href="#">
+              Вязание на заказ
+            </a>
+          </li>
+        </ul>
 
-          <ul class="main-nav__user-interface user-interface">
-            <li class="user-interface__item user-interface__item--search">
-              <a class="user-interface__link user-interface__link--search" href="#">
-                <span class="visually-hidden">Поиск по сайту</span>
-              </a>
-            </li>
-            <li class="user-interface__item user-interface__item--cart">
-              <a class="user-interface__link user-interface__link--cart" href="#">
-                Корзина: пока пуста
-              </a>
-            </li>
-          </ul>
+        <ul class="main-nav__user-interface user-interface">
+          <li class="user-interface__item user-interface__item--search">
+            <a class="user-interface__link user-interface__link--search menu-search" href="#">
+              <span class="menu-search__text">Поиск по сайту</span>
+            </a>
+          </li>
+          <li class="user-interface__item user-interface__item--cart">
+            <a class="user-interface__link user-interface__link--cart" href="#">
+              Корзина: пока пуста
+            </a>
+          </li>
+        </ul>
 
-          <ul class="main-nav__news-list news-list">
-            <li class="news-list__item">
-              <a class="news-list__link" href="#">
-                Новые поступления
-              </a>
-            </li>
-            <li class="news-list__item">
-              <a class="news-list__link" href="#">
-                Распродажа
-              </a>
-            </li>
-          </ul>
-          <span class="main-nav__delivery-label delivery-label">
-            Бесплатная доставка по России
-          </span>
-        </div>
-      </nav>
-    </div>
+        <ul class="main-nav__news-list news-list">
+          <li class="news-list__item">
+            <a class="news-list__link" href="#">
+              Новые поступления
+            </a>
+          </li>
+          <li class="news-list__item">
+            <a class="news-list__link" href="#">
+              Распродажа
+            </a>
+          </li>
+        </ul>
+        <span class="main-nav__delivery-label delivery-label">
+          Бесплатная доставка по России
+        </span>
+      </div>
+    </nav>
   </header>
 
   <main class="page-main">

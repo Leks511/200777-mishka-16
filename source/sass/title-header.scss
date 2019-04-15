@@ -1,12 +1,15 @@
 .title-header {
   width: 100%;
   min-height: 176px;
+  display: flex;
+  align-items: center;
 
   background-color: #f1f1f1;
 }
 
 .title-header__heading {
   margin: 0;
+  margin: 0 auto;
 
   text-align: center;
   color: $main-color;
@@ -24,7 +27,6 @@
 
   .title-header__heading {
     width: 700px;
-    margin: 90px auto 0;
 
     font-size: 43px;
     line-height: 50px;
