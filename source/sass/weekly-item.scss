@@ -2,7 +2,7 @@
   position: relative;
 
   width: 100%;
-  padding: 28px 0;
+  padding: 27px 0 42px;
 
   &::after {
     content: "";
@@ -19,12 +19,13 @@
 
 .weekly-item__label {
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 
   color: #63d1bb;
   font-size: 17px;
   line-height: 20px;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 .weekly-item__description {
@@ -48,7 +49,7 @@
 .weekly-item__photo-container {
   width: 260px;
   height: 315px;
-  margin-bottom: 27px;
+  margin-bottom: 25px;
 }
 
 .weekly-item__photo {
@@ -63,7 +64,7 @@
 
   text-align: center;
   font-size: 17px;
-  line-height: 20px;
+  line-height: 24px;
   font-weight: 700;
 }
 
