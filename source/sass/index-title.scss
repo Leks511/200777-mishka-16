@@ -136,8 +136,7 @@
   }
 
   .index-title__intro {
-    min-height: 626px;
-    display: flex;
+    min-height: 730px;
 
     background: none;
   }
@@ -157,25 +156,41 @@
   .index-title__things-item {
     width: 334px;
   }
+
+  .index-title__things-link {
+    padding: 28px 30px;
+
+    font-size: 20px;
+    line-height: 30px;
+
+    &::after {
+      top: 30px;
+      right: 34px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
   .index-title {
-    min-height: 744px;
-
     background-image: url("../img/hero-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
   }
 
+  .index-title__heading {
+    margin-top: 155px;
+  }
+
   .index-title__intro {
+    min-height: 626px;
+
     background: none;
   }
 
   .index-title__things-list {
     width: 1050px;
-    margin: 14px auto 0;
+    margin: auto auto 0;
   }
 
   .index-title__things-item {

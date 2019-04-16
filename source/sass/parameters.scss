@@ -13,8 +13,9 @@
   border-bottom: 1px solid #ececec;
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
   .parameters__parameter {
-    padding-bottom: 12px;
+    padding: 10px 0;
   }
 }
+

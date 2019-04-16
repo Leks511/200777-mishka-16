@@ -90,14 +90,12 @@
 
 @media (min-width: $tablet-width) {
   .advantages {
-    width: 668px;
+    width: 540px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
 
   .advantages__item {
-    width: 300px;
 
     &--eco {
       order: 0;
