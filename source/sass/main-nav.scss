@@ -114,8 +114,13 @@
   display: block;
 }
 
-.main-nav__menu-wrapper--active {
+.main-nav__menu-wrapper--opened {
   width: 100%;
+  display: block;
+}
+
+.main-nav__menu-wrapper--closed {
+  display: none;
 }
 
 .main-nav__menu-wrapper--active .main-nav__pages-list {
