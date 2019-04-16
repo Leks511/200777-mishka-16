@@ -18,10 +18,22 @@
 
 @media (min-width: $tablet-width) {
   .user-interface__link {
+    position: relative;
+
     display: inline;
     padding: 0;
 
     border-top: none;
+
+    &--search {
+      width: 82px;
+      height: 88px;
+    }
+
+    &--cart {
+      padding-left: 83px;
+      margin-left: auto;
+    }
   }
 
   .user-interface {
@@ -33,7 +45,6 @@
     align-items: center;
   }
 
-
   .user-interface__item--search {
     border-left: 1px solid #ececec;
     border-right: 1px solid #ececec;
@@ -42,20 +53,6 @@
   .user-interface__item--cart {
     width: 314px;
     margin-right: 50px;
-  }
-
-  .user-interface__link {
-    position: relative;
-
-    &--search {
-      width: 82px;
-      height: 88px;
-    }
-
-    &--cart {
-      padding-left: 83px;
-      margin-left: auto;
-    }
   }
 
   .user-interface__link--search::after {
