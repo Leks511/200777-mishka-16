@@ -8,9 +8,13 @@
 
 .parameters__parameter {
   padding-top: 6px;
-  padding-bottom: 10px;
+  padding-bottom: 13px;
 
   border-bottom: 1px solid #ececec;
+
+  &--value {
+    width: 162px;
+  }
 }
 
 @media (min-width: $tablet-width) {
