@@ -1,6 +1,13 @@
 .pages-list__link {
+  font-family: $bold;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.pages-list__link {
   display: block;
-  padding: 27px 0 27px 75px;
+  padding: 27px 0 26px 75px;
+
   color: $main-color;
   font-weight: 700;
   text-decoration: none;
@@ -12,6 +19,9 @@
   .pages-list__link {
     display: inline;
     padding: 0;
+
+    font-family: $bold;
+    font-size: 15px;
     color: $main-color;
     font-weight: 700;
     text-decoration: none;

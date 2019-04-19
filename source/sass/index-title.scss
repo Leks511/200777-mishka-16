@@ -143,8 +143,8 @@
   }
 
   .index-title__heading {
-    width: 700px;
-    margin-top: 163px;
+    width: 670px;
+    margin-top: 153px;
 
     text-align: center;
   }
@@ -159,13 +159,18 @@
   }
 
   .index-title__things-link {
-    padding: 28px 30px;
+    padding: 28px 36px;
 
     font-size: 20px;
     line-height: 30px;
 
-    &::after {
+    &--interior::after {
       top: 30px;
+      right: 37px;
+    }
+
+    &--toys::after {
+      top: 31px;
       right: 34px;
     }
   }
