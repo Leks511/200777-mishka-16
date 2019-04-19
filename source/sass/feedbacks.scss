@@ -1,3 +1,9 @@
 .feedbacks {
-  min-height: 823px;
+  min-height: 825px;
+}
+
+@media (min-width: $tablet-width) {
+  .feedbacks {
+    min-height: 780px;
+  }
 }

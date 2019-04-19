@@ -1,8 +1,5 @@
-.news-list {
-  font-family: $bold;
-}
-
 .news-list__link {
+  font-family: $bold;
   color: $main-color;
   font-weight: 700;
   text-decoration: none;
@@ -11,14 +8,11 @@
 }
 
 @media (min-width: $desktop-width) {
-  .news-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 17px;
-    width: 525px;
+  .news-list__link {
+    font-size: 15px;
   }
 
   .news-list__item {
-    margin-right: 45px;
+    margin-right: 60px;
   }
 }
