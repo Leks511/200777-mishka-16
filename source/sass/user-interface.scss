@@ -29,7 +29,7 @@
 
     &--cart {
       padding-left: 82px;
-      padding-bottom: 2px
+      padding-bottom: 2px;
     }
   }
 
@@ -45,7 +45,6 @@
 
   .user-interface__item--cart {
     width: 314px;
-    margin-right: 50px;
   }
 
   .user-interface__link--search::after {
@@ -82,7 +81,6 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .user-interface__item {
     &--cart {
       margin-right: 0;
