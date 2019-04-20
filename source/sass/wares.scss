@@ -24,13 +24,14 @@
 }
 
 .wares__item-description {
-  padding: 22px 0;
+  padding: 26px 0 19px;
 }
 
 .wares__item-name {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 
+  font-family: $bold;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
@@ -46,7 +47,7 @@
 
 .wares__item-buying {
   margin: 0;
-  padding: 21px 0 28px;
+  padding: 21px 0 27px;
 
   color: $main-color;
   font-size: 15px;
@@ -54,6 +55,10 @@
   font-weight: 700;
 
   border-top: 1px solid #ececec;
+}
+
+.wares-item__price {
+  font-family: $bold;
 }
 
 .wares__item-buy {
@@ -86,7 +91,7 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 55px;
+    margin-bottom: 54px;
   }
 
   .wares__item-photo {
@@ -99,10 +104,12 @@
     flex-grow: 1;
     display: flex;
     flex-wrap: wrap;
-    padding: 0 32px;
+    padding: 0 26px;
   }
 
   .wares__item-name {
+    margin-bottom: 4px;
+
     font-size: 20px;
   }
 

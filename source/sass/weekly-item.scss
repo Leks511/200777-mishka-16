@@ -158,7 +158,7 @@
 
 @media (min-width: $desktop-width) {
   .weekly-item {
-    padding: 125px 0 95px;
+    padding: 127px 0 95px;
   }
 
   .weekly-item__title {
@@ -167,31 +167,33 @@
 
     width: 700px;
     margin-right: auto;
-    margin-left: 25px;
+    margin-left: 22px;
     order: 1;
   }
 
   .weekly-item__label {
+    margin-top: 15px;
     margin-left: 15px;
+    padding: 0 12px;
     order: 0;
   }
 
   .weekly-item__info {
-    margin-left: 173px;
+    margin-left: 175px;
   }
 
   .weekly-item__description {
-    margin-bottom: 46px;
+    margin-bottom: 48px;
 
     font-size: 17px;
   }
 
   .weekly-item__parameters-list {
-    margin-bottom: 106px;
+    margin-bottom: 112px;
   }
 
   .weekly-item__photo-container {
-    top: -55px;
+    top: -53px;
     right: 50px;
 
     width: 525px;
@@ -204,6 +206,11 @@
   }
 
   .weekly-item__price {
-    margin-bottom: 30px;
+    margin-bottom: 33px;
+  }
+
+  .weekly-item__buy-button {
+    width: 292px;
+    margin-left: 0px;
   }
 }

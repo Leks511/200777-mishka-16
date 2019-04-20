@@ -1,6 +1,6 @@
 .title-header {
   width: 100%;
-  min-height: 176px;
+  min-height: 175px;
   display: flex;
   align-items: center;
 
@@ -8,7 +8,7 @@
 }
 
 .title-header__heading {
-  margin: 0 auto;
+  margin: -8px auto 0;
 
   font-family: "Open Sans Bold", "Arial", sans-serif;
   text-align: center;
@@ -20,13 +20,14 @@
 
 @media (min-width: $tablet-width) {
   .title-header {
-    min-height: 320px;
+    min-height: 225px;
     display: flex;
     align-items: center;
   }
 
   .title-header__heading {
     width: 700px;
+    margin: 17px auto 0;
 
     font-size: 43px;
     line-height: 50px;
@@ -35,11 +36,12 @@
 
 @media (min-width: $desktop-width) {
   .title-header {
-    min-height: 350px;
+    min-height: 255px;
   }
 
   .title-header__heading {
     width: 700px;
+    margin: -11px auto 0;
 
     font-size: 53px;
     line-height: 57px;

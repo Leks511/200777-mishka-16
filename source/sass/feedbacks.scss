@@ -7,3 +7,9 @@
     min-height: 780px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .feedbacks {
+    min-height: 478px;
+  }
+}
