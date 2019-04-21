@@ -1,6 +1,6 @@
 .main-nav__logo {
   width: 100%;
-  padding: 22px 0;
+  padding: 21px 0;
   display: flex;
   justify-content: center;
 }
@@ -145,16 +145,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    width: 350px;
     flex-grow: 1;
     order: 1;
+    width: 300px;
 
     background-color: #ffffff;
     border-bottom: 1px solid #e7e7e7;
   }
 
   .main-nav__pages-list {
-    width: 430px;
+    width: 335px;
     margin-top: 16px;
     margin-right: auto;
     padding-left: 50px;
@@ -164,9 +164,12 @@
 
   .main-nav__delivery-label {
     display: block;
+    width: 300px;
     margin-top: 16px;
     padding-right: 50px;
     order: 3;
+
+    text-align: right;
   }
 }
 
