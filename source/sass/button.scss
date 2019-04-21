@@ -1,9 +1,11 @@
 .button {
   box-sizing: border-box;
   display: inline-block;
+  vertical-align: middle;
   width: 100%;
   padding: 15px 20px;
 
+  font-family: $bold;
   text-align: center;
   color: $second-color;
   font-size: 17px;

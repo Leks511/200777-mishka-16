@@ -1,18 +1,31 @@
 .about-us {
-  padding: 30px 0;
+  padding: 26px 0;
 }
 
 .about-us__title {
-  margin-bottom: 30px;
+  margin: 0 0 32px;
 }
 
 @media (min-width: $tablet-width) {
+  .about-us {
+    padding: 47px 0;
+  }
+
   .about-us__title {
     margin-bottom: 50px;
+    margin-left: -5px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .about-us {
+    padding: 60px 0;
+  }
+
+  .about-us__title {
+    margin-bottom: 49px;
+  }
+
   .about-us__container {
     width: 700px;
   }

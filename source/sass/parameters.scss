@@ -8,13 +8,25 @@
 
 .parameters__parameter {
   padding-top: 6px;
-  padding-bottom: 10px;
+  padding-bottom: 13px;
 
   border-bottom: 1px solid #ececec;
+
+  &--value {
+    width: 162px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .parameters__parameter {
+    padding: 10px 0;
+    width: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .parameters__parameter {
-    padding-bottom: 12px;
+    padding: 9px 0;
+    width: 0;
   }
 }

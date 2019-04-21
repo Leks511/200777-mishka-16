@@ -1,6 +1,5 @@
 .page-footer {
   width: 100%;
-  min-height: 160px;
 
   background-color: #f1f1f1;
 }
@@ -9,8 +8,30 @@
   display: none;
 }
 
+.page-footer__copyright {
+  padding: 19px 0;
+}
+
 .page-footer__copyright-text {
   margin: 0;
+
+  font-family: $bold;
+  text-align: center;
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.page-footer__copyright-link {
+  margin-left: 25px;
+  display: inline-block;
+  vertical-align: middle;
+
+  cursor: pointer;
+}
+
+.page-footer__copyright-icon-logo {
+  fill: #63d1bb;
 }
 
 .page-footer__social {
@@ -39,6 +60,7 @@
   }
 
   .page-footer__logo-image {
+    margin-top: -12px;
     margin-right: auto;
     width: 102px;
     height: 34px;

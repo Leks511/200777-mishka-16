@@ -11,9 +11,10 @@
   margin-bottom: 30px;
 }
 
-.wares__photo {
+.wares__item-photo {
   width: 260px;
   height: 195px;
+  margin-bottom: -6px;
 }
 
 .wares__item-info {
@@ -23,19 +24,20 @@
 }
 
 .wares__item-description {
-  padding: 22px 0;
+  padding: 26px 0 19px;
 }
 
-.wares__name {
+.wares__item-name {
   margin: 0;
-  margin-bottom: 7px;
+  margin-bottom: 5px;
 
+  font-family: $bold;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
 }
 
-.wares__parameters {
+.wares__item-parameters {
   margin: 0;
 
   color: $second-color;
@@ -43,9 +45,9 @@
   line-height: 30px;
 }
 
-.wares__buying {
+.wares__item-buying {
   margin: 0;
-  padding: 20px 0;
+  padding: 21px 0 27px;
 
   color: $main-color;
   font-size: 15px;
@@ -55,7 +57,11 @@
   border-top: 1px solid #ececec;
 }
 
-.wares__buy {
+.wares-item__price {
+  font-family: $bold;
+}
+
+.wares__item-buy {
   position: relative;
 
   text-decoration: none;
@@ -85,28 +91,43 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 54px;
   }
 
-  .wares__photo {
+  .wares__item-photo {
     width: 334px;
     height: 334px;
   }
 
   .wares__item-info {
     width: 250px;
-    min-height: 332px;
     flex-grow: 1;
     display: flex;
     flex-wrap: wrap;
+    padding: 0 26px;
+  }
+
+  .wares__item-name {
+    margin-bottom: 4px;
+
+    font-size: 20px;
+  }
+
+  .wares__item-parameters {
+    font-size: 15px;
   }
 
   .wares__item-description {
     width: 100%;
   }
 
-  .wares__buying {
+  .wares__item-buying {
     width: 100%;
     margin-top: auto;
+  }
+
+  .wares__item-price {
+    font-size: 17px;
   }
 }
 
@@ -131,13 +152,35 @@
     width: 260px;
   }
 
-  .wares__photo-container {
+  .wares__item-photo-container {
     width: 316px;
     height: 462px;
   }
 
-  .wares__photo {
+  .wares__item-photo {
     width: 316px;
     height: 462px;
+    margin-bottom: 0;
+  }
+
+  .wares__item-description {
+    padding: 25px 0 14px;
+  }
+
+  .wares__item-name {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .wares__item-parameters {
+    font-size: 15px;
+  }
+
+  .wares__item-buying {
+    padding: 23px 0;
+  }
+
+  .wares__item-price {
+    font-size: 17px;
   }
 }
