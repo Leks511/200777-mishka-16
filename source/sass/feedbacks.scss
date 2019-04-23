@@ -1,5 +1,37 @@
 .feedbacks {
-  min-height: 825px;
+  padding-top: 13px;
+}
+
+.feedbacks__title {
+  margin: 0 0 25px;
+}
+
+.feedbacks__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.feedbacks__text {
+  margin: 0 0 28px;
+
+  color: $second-color;
+  line-height: 30px;
+}
+
+.feedbacks__author {
+  font-family: $bold;
+  font-size: 17px;
+}
+
+.feedbacks__link {
+  display: block;
+  margin-top: 2px;
+
+  font-size: $regular;
+  line-height: 30px;
+  color: $second-color;
 }
 
 @media (min-width: $tablet-width) {
