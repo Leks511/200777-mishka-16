@@ -1,0 +1,19 @@
+.arrow-buttons {
+  width: 260px;
+  margin-bottom: 38px;
+  display: flex;
+}
+
+.arrow-buttons__arrow {
+  width: 131px;
+  height: 52px;
+  margin: 0;
+  padding: 0;
+
+  border: 1px solid #ececec;
+  background: transparent;
+
+  &--prev {
+    margin-right: -1px;
+  }
+}

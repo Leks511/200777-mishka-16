@@ -1,5 +1,5 @@
 .about-us {
-  padding: 26px 0 11px;
+  padding: 26px 0 13px;
 }
 
 .about-us__title {
@@ -8,7 +8,7 @@
 
 @media (min-width: $tablet-width) {
   .about-us {
-    padding: 47px 0;
+    padding: 49px 0 28px;
   }
 
   .about-us__title {
@@ -19,7 +19,7 @@
 
 @media (min-width: $desktop-width) {
   .about-us {
-    padding: 60px 0;
+    padding: 62px 0 35px;
   }
 
   .about-us__title {

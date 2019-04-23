@@ -69,11 +69,6 @@
   font-weight: 700;
 }
 
-.weekly-item__buy-button {
-  box-sizing: border-box;
-  width: 260px;
-}
-
 @media (min-width: $tablet-width) {
   .weekly-item {
     padding: 48px 0 70px;
@@ -144,15 +139,14 @@
   .weekly-item__price {
     width: 290px;
     margin-left: -1px;
-    margin-bottom: 33px;
+    margin-bottom: 34px;
 
     font-size: 20px;
     text-align: center;
   }
 
-  .weekly-item__buy-button {
+  .weekly-item__button {
     width: 292px;
-    margin-left: -2px;
   }
 }
 
@@ -207,10 +201,5 @@
 
   .weekly-item__price {
     margin-bottom: 33px;
-  }
-
-  .weekly-item__buy-button {
-    width: 292px;
-    margin-left: 0;
   }
 }
