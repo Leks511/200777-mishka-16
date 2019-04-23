@@ -1,6 +1,6 @@
 .contacts {
   padding-top: 34px;
-  padding-block-end: 39px;
+  padding-bottom: 39px;
 }
 
 .contacts__container {
@@ -100,16 +100,20 @@
 @media (min-width: $desktop-width) {
   .contacts {
     padding-top: 141px;
+    padding-bottom: 108px;
   }
 
   .contacts__container {
-    width: 1150px;
+    position: relative;
+
+    width: 1050px;
     padding: 0 50px;
   }
 
   .contacts__title {
     margin-left: 169px;
     margin-bottom: 44px;
+    width: 300px;
 
     font-size: 53px;
     line-height: 57px;
@@ -117,9 +121,32 @@
 
   .contacts__list {
     margin-left: 175px;
+    margin-bottom: 49px;
     padding: 0;
+    width: 300px;
 
     font-size: 17px;
+  }
+
+  .contacts__row {
+    margin-bottom: 26px;
+  }
+
+  .contacts__type {
+    width: 60px;
+  }
+
+  .contacts__info {
+    padding: 0 0 0 10px;
+  }
+
+  .contacts__map-container {
+    position: absolute;
+    top: -70px;
+    right: 50px;
+
+    width: 525px;
+    margin: 0;
   }
 
   .contacts__button {
