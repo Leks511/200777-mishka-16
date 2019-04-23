@@ -1,7 +1,6 @@
 .button {
   box-sizing: border-box;
   display: block;
-  vertical-align: middle;
   width: 260px;
   padding: 14px 20px;
 
@@ -19,5 +18,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  width: 230px;
+  .button {
+    width: 230px;
+  }
 }
