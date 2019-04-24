@@ -16,9 +16,9 @@
 }
 
 .wares__item-photo {
+  display: block;
   width: 260px;
   height: 195px;
-  margin-bottom: -6px;
 }
 
 .wares__item-info {
@@ -145,9 +145,14 @@
     flex-direction: column;
     width: 316px;
     margin-right: 51px;
+    margin-bottom: 20px;
 
     &:nth-child(3n) {
       margin-right: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 20px;
     }
   }
 
@@ -164,7 +169,6 @@
   .wares__item-photo {
     width: 316px;
     height: 462px;
-    margin-bottom: 0;
   }
 
   .wares__item-description {
