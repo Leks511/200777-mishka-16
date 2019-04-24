@@ -1,0 +1,145 @@
+.form__type-part {
+  margin-bottom: 45px;
+}
+
+.form__header {
+  position: relative;
+
+  margin: 0 0 33px;
+
+  font-family: $bold;
+  font-size: 17px;
+  line-height: 16px;
+  color: #63d1bb;
+  text-transform: uppercase;
+}
+
+.form__type-options-list {
+  margin: 0;
+  padding: 0;
+
+  font-size: 17px;
+  line-height: 18px;
+  font-family: $bold;
+
+  list-style: none;
+}
+
+.form__type-options-item {
+  margin-bottom: 24px;
+  padding-left: 62px;
+}
+
+.form__label {
+  position: relative;
+
+}
+
+.form__radio-pseudo {
+  position: absolute;
+  top: -6px;
+  left: -62px;
+
+  display: block;
+  width: 34px;
+  height: 34px;
+
+  border: 3px solid #000000;
+  border-radius: 50%;
+}
+
+.form__radio:checked + .form__radio-pseudo::after {
+  content: "";
+
+  position: absolute;
+  top: 9px;
+  left: 9px;
+
+  width: 16px;
+  height: 16px;
+
+  background-color: #62d1ba;
+  border-radius: 50%;
+}
+
+.form__color-part {
+  margin-bottom: 39px;
+}
+
+.form__color-options-list {
+  margin: 0;
+  padding: 0;
+
+  font-size: 17px;
+  line-height: 18px;
+  font-family: $bold;
+
+  list-style: none;
+}
+
+.form__color-options-item {
+  margin-bottom: 44px;
+  padding-left: 62px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__checkbox-pseudo {
+  position: absolute;
+  top: -8px;
+  left: -62px;
+
+  display: block;
+  width: 36px;
+  height: 35px;
+
+  border: 2px solid #000000;
+}
+
+.form__checkbox:checked + .form__checkbox-pseudo::after {
+  content: "";
+
+  position: absolute;
+  top: 11px;
+  left: 6px;
+
+  width: 22px;
+  height: 16px;
+
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+}
+
+.form__name-part {
+  margin-bottom: 32px;
+}
+
+.form__name-part .form__header {
+  margin: 0 0 30px;
+}
+
+.form__name-part .form__row {
+  margin: 0 0 20px;
+
+  font-size: 17px;
+  line-height: 18px;
+  font-family: $bold;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__name-part .form__label {
+  display: block;
+}
+
+.form__name-part .form__text-field {
+  width: 100%;
+  padding: 16px 0;
+
+  border: none;
+  border-bottom: 2px solid #000000;
+}
