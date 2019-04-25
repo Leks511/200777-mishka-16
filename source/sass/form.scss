@@ -1,11 +1,9 @@
-.form__type-part {
-  margin-bottom: 45px;
+.form__label {
+  position: relative;
 }
 
-.form__header {
+.form__part-header {
   position: relative;
-
-  margin: 0 0 33px;
 
   font-family: $bold;
   font-size: 17px;
@@ -14,7 +12,27 @@
   text-transform: uppercase;
 }
 
-.form__type-options-list {
+.form__data-field {
+  width: 100%;
+  padding: 15px 0;
+
+  font-size: 17px;
+  line-height: 18px;
+  color: $second-color;
+
+  border: none;
+  border-bottom: 2px solid #000000;
+}
+
+.form__part--type {
+  margin-bottom: 45px;
+}
+
+.form__part--type .form__part-header {
+  margin: 0 0 33px;
+}
+
+.form__part--type .form__options-list {
   margin: 0;
   padding: 0;
 
@@ -25,17 +43,12 @@
   list-style: none;
 }
 
-.form__type-options-item {
+.form__part--type .form__options-item {
   margin-bottom: 24px;
   padding-left: 62px;
 }
 
-.form__label {
-  position: relative;
-
-}
-
-.form__radio-pseudo {
+.form__part--type .form__radio-pseudo {
   position: absolute;
   top: -6px;
   left: -62px;
@@ -48,7 +61,7 @@
   border-radius: 50%;
 }
 
-.form__radio:checked + .form__radio-pseudo::after {
+.form__part--type .form__radio:checked + .form__radio-pseudo::after {
   content: "";
 
   position: absolute;
@@ -62,11 +75,15 @@
   border-radius: 50%;
 }
 
-.form__color-part {
-  margin-bottom: 39px;
+.form__part--color {
+  margin-bottom: 43px;
 }
 
-.form__color-options-list {
+.form__part--color .form__part-header {
+  margin: 0 0 35px;
+}
+
+.form__part--color .form__options-list {
   margin: 0;
   padding: 0;
 
@@ -77,8 +94,8 @@
   list-style: none;
 }
 
-.form__color-options-item {
-  margin-bottom: 44px;
+.form__part--color .form__options-item {
+  margin-bottom: 43px;
   padding-left: 62px;
 
   &:last-child {
@@ -86,7 +103,7 @@
   }
 }
 
-.form__checkbox-pseudo {
+.form__part--color .form__checkbox-pseudo {
   position: absolute;
   top: -8px;
   left: -62px;
@@ -98,7 +115,7 @@
   border: 2px solid #000000;
 }
 
-.form__checkbox:checked + .form__checkbox-pseudo::after {
+.form__part--color .form__checkbox:checked + .form__checkbox-pseudo::after {
   content: "";
 
   position: absolute;
@@ -112,34 +129,71 @@
   background-repeat: no-repeat;
 }
 
-.form__name-part {
-  margin-bottom: 32px;
+.form__part--name {
+  margin-bottom: 33px;
 }
 
-.form__name-part .form__header {
-  margin: 0 0 30px;
+.form__part--name .form__part-header {
+  margin: 0 0 29px;
 }
 
-.form__name-part .form__row {
-  margin: 0 0 20px;
-
-  font-size: 17px;
-  line-height: 18px;
-  font-family: $bold;
+.form__part--name .form__row {
+  margin: 0 0 24px;
 
   &:last-child {
     margin-bottom: 0;
   }
 }
 
-.form__name-part .form__label {
+.form__part--name .form__label {
   display: block;
+
+  font-size: 17px;
+  line-height: 18px;
+  font-family: $bold;
 }
 
-.form__name-part .form__text-field {
-  width: 100%;
-  padding: 16px 0;
+.form__part--contacts {
+  margin-bottom: 33px;
+}
 
-  border: none;
-  border-bottom: 2px solid #000000;
+.form__part--contacts .form__part-header {
+  margin: 0 0 8px;
+}
+
+.form__part--contacts .form__row {
+  margin: 0 0 33px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__part--additional {
+  margin-bottom: 11px;
+}
+
+.form__part--additional .form__part-header {
+  margin: 0 0 25px;
+}
+
+.form__wishes {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 14px 15px;
+
+  font-size: 17px;
+  line-height: 18px;
+  color: $second-color;
+
+  border: 2px solid #000000;
+}
+
+.form__notice {
+  display: block;
+  margin-bottom: 31px;
+
+  font-size: 14px;
+  line-height: 16px;
+  color: $second-color;
 }

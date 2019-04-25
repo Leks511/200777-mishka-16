@@ -100,17 +100,17 @@
           </p>
 
           <form class="order__form form" action="https://echo.htmlacademy.ru">
-            <div class="form__type-part">
-              <h3 class="form__header">Тип</h3>
-              <ul class="form__type-options-list">
-                <li class="form__type-options-item">
+            <div class="form__part form__part--type">
+              <h3 class="form__part-header">Тип</h3>
+              <ul class="form__options-list">
+                <li class="form__options-item">
                   <label class="form__label">
                     <input class="form__radio visually-hidden" checked type="radio" name="type">
                     <span class="form__radio-pseudo"></span>
                     Аксессуар для интерьера
                   </label>
                 </li>
-                <li class="form__type-options-item">
+                <li class="form__options-item">
                   <label class="form__label">
                     <input class="form__radio visually-hidden" type="radio" name="type">
                     <span class="form__radio-pseudo"></span>
@@ -120,45 +120,45 @@
               </ul>
             </div>
 
-            <div class="form__color-part">
-              <h3 class="form__header">Цвет</h3>
-              <ul class="form__color-options-list">
-                <li class="form__color-options-item">
+            <div class="form__part form__part--color">
+              <h3 class="form__part-header">Цвет</h3>
+              <ul class="form__options-list">
+                <li class="form__options-item">
                   <label class="form__label">
                     <input class="form__checkbox visually-hidden" type="checkbox" checked>
                     <span class="form__checkbox-pseudo"></span>
                     Белый
                   </label>
                 </li>
-                <li class="form__color-options-item">
+                <li class="form__options-item">
                   <label class="form__label">
                     <input class="form__checkbox visually-hidden" type="checkbox" checked>
                     <span class="form__checkbox-pseudo"></span>
                     Серый
                   </label>
                 </li>
-                <li class="form__color-options-item">
+                <li class="form__options-item">
                   <label class="form__label">
                     <input class="form__checkbox visually-hidden" type="checkbox">
                     <span class="form__checkbox-pseudo"></span>
                     &laquo;Тиффани&raquo;
                   </label>
                 </li>
-                <li class="form__color-options-item">
+                <li class="form__options-item">
                   <label class="form__label">
                     <input class="form__checkbox visually-hidden" type="checkbox">
                     <span class="form__checkbox-pseudo"></span>
                     Черный
                   </label>
                 </li>
-                <li class="form__color-options-item">
+                <li class="form__options-item">
                   <label class="form__label">
                     <input class="form__checkbox visually-hidden" type="checkbox">
                     <span class="form__checkbox-pseudo"></span>
                     Розовый
                   </label>
                 </li>
-                <li class="form__color-options-item">
+                <li class="form__options-item">
                   <label class="form__label">
                     <input class="form__checkbox visually-hidden" type="checkbox">
                     <span class="form__checkbox-pseudo"></span>
@@ -168,44 +168,42 @@
               </ul>
             </div>
 
-            <div class="form__name-part">
-              <h3 class="form__header">ФИО</h3>
-              <p class="form__row">
+            <div class="form__part form__part--name">
+              <h3 class="form__part-header">ФИО</h3>
+              <div class="form__row">
                 <label class="form__label" for="client-name">Имя:</label>
-                <input class="form__text-field" name="client-name" id="client-name" required type="text" placeholder="Введите ваше имя*">
-              </p>
-              <p class="form__row">
+                <input class="form__data-field" name="client-name" id="client-name" required type="text" placeholder="Введите ваше имя*">
+              </div>
+              <div class="form__row">
                 <label class="form__label" for="client-surname">Фамилия:</label>
-                <input class="form__text-field" name="client-surname" id="client-surname" required type="text" placeholder="Укажите фамилию*">
-              </p>
-              <p class="form__row">
+                <input class="form__data-field" name="client-surname" id="client-surname" required type="text" placeholder="Укажите фамилию*">
+              </div>
+              <div class="form__row">
                 <label class="form__label" for="client-patronymic">Отчество:</label>
-                <input class="form__text-field" name="client-patronymic" id="client-patronymic" type="text" placeholder="Отчество, если желаете">
-              </p>
+                <input class="form__data-field" name="client-patronymic" id="client-patronymic" type="text" placeholder="Отчество, если желаете">
+              </div>
             </div>
 
-            <div class="form__part">
-              <h3 class="form__header">ТЕЛ</h3>
-              <p class="form__row">
-                <input class="form__client-tel-number" name="client-tel-number" type="tel" required pattern="+7 [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 XXX XXX XX XX*">
-              </p>
-            </div>
+            <div class="form__part form__part--contacts">
+              <h3 class="form__part-header">ТЕЛ</h3>
+              <div class="form__row">
+                <input class="form__data-field" name="client-tel-number" type="tel" required pattern="+7 [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 XXX XXX XX XX*">
+              </div>
 
-            <div class="form__part">
-              <h3 class="form__header">E-MAIL</h3>
-              <p class="form__row">
-                <input class="form__client-email" name="client-email" type="email" required
+              <h3 class="form__part-header">E-MAIL</h3>
+              <div class="form__row">
+                <input class="form__data-field" name="client-email" type="email" required
                   placeholder="Ваш Email*">
-              </p>
+              </div>
             </div>
 
-            <div class="form__part">
-              <h3 class="form__header">ДОП</h3>
+            <div class="form__part form__part--additional">
+              <h3 class="form__part-header">ДОП</h3>
               <label class="visually-hidden" for="client-wishes">Поле для пожеланий клиента</label>
-              <textarea class="form__wishes" name="client-wishes" id="client-wishes" cols="30" rows="10" placeholder="Опишите все ваши пожелания по заказу"></textarea>
+              <textarea class="form__wishes" name="client-wishes" id="client-wishes" cols="30" rows="6" placeholder="Опишите все ваши пожелания по заказу"></textarea>
             </div>
 
-            <small class="form__h3"><sup>*</sup>Поля обязательны для заполнения</small>
+            <small class="form__notice"><sup>*</sup>Поля обязательны для заполнения</small>
 
             <button class="form__submit-button button" type="button">Отправить заказ</button>
           </form>
