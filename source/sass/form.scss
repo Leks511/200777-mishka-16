@@ -33,6 +33,7 @@
 
   border: none;
   border-bottom: 2px solid #000000;
+  background-color: transparent;
 }
 
 .form__part--type {
@@ -46,6 +47,10 @@
 .form__part--type .form__options-item {
   margin-bottom: 24px;
   padding-left: 62px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .form__part--type .form__radio-pseudo {
@@ -209,6 +214,11 @@
     list-style: none;
   }
 
+  .form__part--type {
+    margin-bottom: 0;
+    padding: 49px 0 69px;
+  }
+
   .form__part--type .form__part-header {
     margin: 3px 0 0;
   }
@@ -241,10 +251,50 @@
   }
 
   .form__part--color {
+    margin-bottom: 0;
+    padding: 65px 0;
+
     background-color: #f1f1f1;
+  }
+
+  .form__part--color .form__part-container {
+    display: flex;
+  }
+
+  .form__part--color .form__part-header {
+    margin: 3px 0 0;
+  }
+
+  .form__part--color .form__options-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 500px;
+  }
+
+  .form__part--color .form__options-item {
+    box-sizing: border-box;
+    width: 238px;
+    margin-bottom: 58px;
+    padding-left: 80px;
+  }
+
+  .form__part--color .form__checkbox-pseudo {
+    top: -11px;
+    left: -81px;
+
+    width: 50px;
+    height: 48px;
+  }
+
+  .form__part--color .form__checkbox:checked + .form__checkbox-pseudo::after {
+    width: 33px;
+    height: 22px;
   }
 
   .form__part--contacts {
     background-color: #f1f1f1;
   }
+
+
 }
