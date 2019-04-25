@@ -252,7 +252,7 @@
 
   .form__part--color {
     margin-bottom: 0;
-    padding: 65px 0;
+    padding: 65px 0 69px;
 
     background-color: #f1f1f1;
   }
@@ -277,6 +277,10 @@
     width: 238px;
     margin-bottom: 58px;
     padding-left: 80px;
+
+    &:nth-last-child(2) {
+      margin-bottom: 0;
+    }
   }
 
   .form__part--color .form__checkbox-pseudo {
@@ -288,8 +292,23 @@
   }
 
   .form__part--color .form__checkbox:checked + .form__checkbox-pseudo::after {
+    top: 14px;
+    left: 9px;
+
     width: 33px;
     height: 22px;
+  }
+
+  .form__part--name {
+    padding-top: 65px;
+  }
+
+  .form__part--name .form__part-header {
+    margin: 3px 0 0;
+  }
+
+  .form__part--name .form__rows {
+    width: 500px;
   }
 
   .form__part--contacts {
