@@ -98,9 +98,11 @@
             Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить
             детали.
           </p>
+        </div>
 
-          <form class="order__form form" action="https://echo.htmlacademy.ru">
-            <div class="form__part form__part--type">
+        <form class="order__form form" action="https://echo.htmlacademy.ru">
+          <div class="form__part form__part--type">
+            <div class="form__part-container container">
               <h3 class="form__part-header">Тип</h3>
               <ul class="form__options-list">
                 <li class="form__options-item">
@@ -119,8 +121,10 @@
                 </li>
               </ul>
             </div>
+          </div>
 
-            <div class="form__part form__part--color">
+          <div class="form__part form__part--color">
+            <div class="form__part-container container">
               <h3 class="form__part-header">Цвет</h3>
               <ul class="form__options-list">
                 <li class="form__options-item">
@@ -167,47 +171,55 @@
                 </li>
               </ul>
             </div>
+          </div>
 
-            <div class="form__part form__part--name">
+          <div class="form__part form__part--name">
+            <div class="form__part-container container">
               <h3 class="form__part-header">ФИО</h3>
-              <div class="form__row">
-                <label class="form__label" for="client-name">Имя:</label>
-                <input class="form__data-field" name="client-name" id="client-name" required type="text" placeholder="Введите ваше имя*">
-              </div>
-              <div class="form__row">
-                <label class="form__label" for="client-surname">Фамилия:</label>
-                <input class="form__data-field" name="client-surname" id="client-surname" required type="text" placeholder="Укажите фамилию*">
-              </div>
-              <div class="form__row">
-                <label class="form__label" for="client-patronymic">Отчество:</label>
-                <input class="form__data-field" name="client-patronymic" id="client-patronymic" type="text" placeholder="Отчество, если желаете">
+              <div class="form__rows">
+                <div class="form__row">
+                  <label class="form__label" for="client-name">Имя:</label>
+                  <input class="form__data-field" name="client-name" id="client-name" required type="text" placeholder="Введите ваше имя*">
+                </div>
+                <div class="form__row">
+                  <label class="form__label" for="client-surname">Фамилия:</label>
+                  <input class="form__data-field" name="client-surname" id="client-surname" required type="text" placeholder="Укажите фамилию*">
+                </div>
+                <div class="form__row">
+                  <label class="form__label" for="client-patronymic">Отчество:</label>
+                  <input class="form__data-field" name="client-patronymic" id="client-patronymic" type="text" placeholder="Отчество, если желаете">
+                </div>
               </div>
             </div>
+          </div>
 
-            <div class="form__part form__part--contacts">
-              <h3 class="form__part-header">ТЕЛ</h3>
+          <div class="form__part form__part--contacts">
+            <div class="form__part-container container">
               <div class="form__row">
+                <h3 class="form__part-header">ТЕЛ</h3>
                 <input class="form__data-field" name="client-tel-number" type="tel" required pattern="+7 [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 XXX XXX XX XX*">
               </div>
 
-              <h3 class="form__part-header">E-MAIL</h3>
               <div class="form__row">
+                <h3 class="form__part-header">E-MAIL</h3>
                 <input class="form__data-field" name="client-email" type="email" required
                   placeholder="Ваш Email*">
               </div>
             </div>
+          </div>
 
-            <div class="form__part form__part--additional">
+          <div class="form__part form__part--additional">
+            <div class="form__part-container container">
               <h3 class="form__part-header">ДОП</h3>
               <label class="visually-hidden" for="client-wishes">Поле для пожеланий клиента</label>
               <textarea class="form__wishes" name="client-wishes" id="client-wishes" cols="30" rows="6" placeholder="Опишите все ваши пожелания по заказу"></textarea>
             </div>
+          </div>
 
-            <small class="form__notice"><sup>*</sup>Поля обязательны для заполнения</small>
+          <small class="form__notice"><sup>*</sup>Поля обязательны для заполнения</small>
 
-            <button class="form__submit-button button" type="button">Отправить заказ</button>
-          </form>
-        </div>
+          <button class="form__submit-button button" type="button">Отправить заказ</button>
+        </form>
 
       </section>
 
