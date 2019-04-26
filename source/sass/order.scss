@@ -13,6 +13,7 @@
 @media (min-width: $tablet-width) {
   .order {
     padding-top: 73px;
+    padding-bottom: 50px;
   }
 
   .order__preview {
@@ -20,5 +21,16 @@
 
     font-size: 17px;
     line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order {
+    padding-top: 120px;
+  }
+
+  .order__preview {
+    width: 700px;
+    margin-left: 175px;
   }
 }
