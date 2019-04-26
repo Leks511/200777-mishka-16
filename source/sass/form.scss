@@ -25,7 +25,7 @@
 
 .form__data-field {
   width: 100%;
-  padding: 15px 0;
+  padding: 13px 0 17px;
 
   font-family: $regular;
   font-size: 17px;
@@ -117,11 +117,13 @@
   top: 11px;
   left: 6px;
 
-  width: 22px;
-  height: 16px;
+  width: 36px;
+  height: 35px;
 
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 22px;
 }
 
 .form__part--name {
@@ -294,6 +296,8 @@
 
     width: 33px;
     height: 22px;
+
+    background-size: 33px;
   }
 
   .form__part--name {
