@@ -1,11 +1,4 @@
 var buttonToggleMenu = document.querySelector(".main-nav__toggle");
-var mainNav = document.querySelector(".main-nav__menu-wrapper");
-
-mainNav.classList.remove("main-nav__menu-wrapper--nojs");
-mainNav.classList.add("main-nav__menu-wrapper--closed");
-
-console.log("привет");
-
 
 buttonToggleMenu.addEventListener("click", function(evt){
   evt.preventDefault();
