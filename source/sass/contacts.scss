@@ -64,11 +64,28 @@
   }
 
   .contacts__title {
+    position: relative;
+
     margin: 0 0 45px -5px;
     padding: 0;
 
     font-size: 43px;
     line-height: 50px;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      right: 3px;
+      top: -15px;
+
+      width: 47px;
+      height: 81px;
+
+      background-image: url("../img/icon-flag.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
   }
 
   .contacts__list {
@@ -133,6 +150,12 @@
 
     font-size: 53px;
     line-height: 57px;
+
+    &::after {
+      top: -8px;
+      right: auto;
+      left: -106px;
+    }
   }
 
   .contacts__list {
