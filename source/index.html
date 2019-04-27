@@ -125,7 +125,7 @@
               </picture>
             </div>
             <p class="weekly-item__price">Цена: 990 руб.</p>
-            <a class="weekly-item__buy-button button" href="#">Заказать</a>
+            <a class="weekly-item__button button" href="#">Заказать</a>
           </div>
         </div>
       </section>
@@ -155,41 +155,49 @@
                 отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
                 больше лайков!
               </p>
-              <p class="feedbacks__author">Анастасия Красильникова <a class="feedbacks__link" href="#">@misssssiskras</a></p>
+              <p class="feedbacks__author">Анастасия Красильникова</p>
+              <a class="feedbacks__link" href="#">@misssssiskras</a>
             </li>
           </ul>
-          <p class="arrow-buttons">
-            <button class="arrow-buttons__prev-button arrow-button" type="button">
+          <div class="feedbacks__arrow-buttons arrow-buttons">
+            <button class="arrow-buttons__arrow arrow-buttons__arrow--prev" type="button">
               <span class="visually-hidden">Предыдущий отзыв</span>
             </button>
-            <button class="arrow-buttons__next-button arrow-button" type="button">
+            <button class="arrow-buttons__arrow arrow-buttons__arrow--next" type="button">
               <span class="visually-hidden">Следующий отзыв</span>
             </button>
-          </p>
-          <a class="feedbacks__to-write button" href="#">Написать</a>
+          </div>
+          <a class="feedbacks__button button" href="#">Написать</a>
         </div>
       </section>
 
       <section class="contacts">
-        <h2 class="contacts__title">Контакты</h2>
-        <table>
-          <tr>
-            <td class="contacts__type">e-mail:</td>
-            <td class="contacts__info">
-              <a class="contacts__info--link">info@mimimishkashop.ru</a>
-            </td>
-          </tr>
-          <tr>
-            <td class="contacts__type">адрес:</td>
-            <td class="contacts__info">
-              г. Санкт-Петербург,
-              ул. Большая Конюшенная,
-              д. 19/8, офис 101
-            </td>
-          </tr>
-        </table>
-        <img width="322" height="457" class="contacts__map--image" src="http://placehold.it/322x457" alt="Наш адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
-        <a class="button" href="#">Напишите нам</a>
+        <div class="contacts__container container">
+          <h2 class="contacts__title">Контакты</h2>
+          <table class="contacts__list">
+            <tr class="contacts__row">
+              <td class="contacts__type">e-mail:</td>
+              <td class="contacts__info">
+                <a class="contacts__info--link">info@mimimishkashop.ru</a>
+              </td>
+            </tr>
+            <tr class="contacts__row">
+              <td class="contacts__type">адрес:</td>
+              <td class="contacts__info">
+                г. Санкт-Петербург,
+                ул. Большая Конюшенная,
+                д. 19/8, офис 101
+              </td>
+            </tr>
+          </table>
+          <div class="contacts__map-container">
+            <picture>
+              <img class="contacts__map-image" width="322" height="457" src="img/map-mobile@1x.jpg"
+                alt="Наш адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+            </picture>
+          </div>
+          <a class="contacts__button button" href="#">Напишите нам</a>
+        </div>
       </section>
 
     </main>

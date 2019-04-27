@@ -1,9 +1,8 @@
 .button {
   box-sizing: border-box;
-  display: inline-block;
-  vertical-align: middle;
-  width: 100%;
-  padding: 15px 20px;
+  display: block;
+  width: 260px;
+  padding: 14px 20px;
 
   font-family: $bold;
   text-align: center;
@@ -16,4 +15,10 @@
 
   background-color: transparent;
   border: 2px solid $second-color;
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    width: 230px;
+  }
 }

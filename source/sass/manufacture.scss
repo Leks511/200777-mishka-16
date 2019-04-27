@@ -1,0 +1,144 @@
+.manufacture {
+  padding-top: 17px;
+  padding-bottom: 58px;
+}
+
+.manufacture__header-text {
+  display: block;
+  padding-left: 56px;
+  margin: 0 0 23px;
+
+  font-family: $bold;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.manufacture__info {
+  padding: 23px 33px 32px 33px;
+
+  border: 1px solid #ececec;
+}
+
+.manufacture__video-container {
+  width: 260px;
+  margin: 0 -34px 27px;
+}
+
+.manufacture__video {
+  display: block;
+  width: 260px;
+  height: 150px;
+}
+
+.manufacture__intro-text {
+  margin: 0 0 50px;
+  width: 200px;
+
+  color: $second-color;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.manufacture__button {
+  width: 192px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .manufacture {
+    padding-top: 28px;
+    padding-bottom: 65px;
+  }
+
+  .manufacture__container {
+    position: relative;
+
+    padding-top: 455px;
+  }
+
+  .manufacture__info {
+    padding: 37px 40px 46px;
+  }
+
+  .manufacture__video-container {
+    position: absolute;
+    top: 0;
+    left: 50px;
+
+    width: 668px;
+    height: 455px;
+    margin: 0;
+  }
+
+  .manufacture__video {
+    width: 668px;
+    height: 455px;
+  }
+
+  .manufacture__header-text {
+    display: block;
+    margin-bottom: 32px;
+    padding-left: 65px;
+    padding-bottom: 0;
+
+    font-family: $bold;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .manufacture__intro-text {
+    margin: 0 0 36px;
+    width: auto;
+
+    color: $second-color;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .manufacture__button {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .manufacture {
+    padding-bottom: 120px;
+  }
+
+  .manufacture__container {
+    padding-top: 0;
+  }
+
+  .manufacture__info {
+    box-sizing: border-box;
+    min-height: 455px;
+    width: 368px;
+    margin-left: auto;
+    padding: 95px 10px 46px 77px;
+  }
+
+  .manufacture__header-text {
+    width: 230px;
+    padding-left: 0;
+  }
+
+  .manufacture__intro-text {
+    margin: 0 0 47px;
+  }
+
+  .manufacture__video-container {
+    width: 682px;
+    height: 455px;
+  }
+
+  .manufacture__video {
+    width: 682px;
+    height: 455px;
+  }
+
+  .manufacture__button {
+    width: 230px;
+    margin-left: 0;
+  }
+}
