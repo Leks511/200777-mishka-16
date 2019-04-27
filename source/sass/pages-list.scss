@@ -25,21 +25,12 @@
     border-top: none;
   }
 
-  .pages-list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
   .pages-list__item {
     margin-right: 35px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .pages-list {
-    align-items: stretch;
-  }
-
   .pages-list__item {
     display: flex;
     align-items: center;

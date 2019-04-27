@@ -1,20 +1,20 @@
 var buttonToggleMenu = document.querySelector(".main-nav__toggle");
+var mainNavigation = document.querySelector(".page-header__main-nav");
+var pagesList = document.querySelector(".main-nav__pages-list");
+var userInterface = document.querySelector(".main-nav__user-interface");
+
+mainNavigation.classList.remove("main-nav--opened");
+mainNavigation.classList.add("main-nav--closed");
 
 buttonToggleMenu.addEventListener("click", function(evt){
   evt.preventDefault();
 
-  if (this.classList.contains("main-nav__toggle--inactive")) {
-    this.classList.remove("main-nav__toggle--inactive");
-    this.classList.add("main-nav__toggle--active");
-
-    mainNav.classList.remove("main-nav__menu-wrapper--closed");
-    mainNav.classList.add("main-nav__menu-wrapper--opened");
+  if (mainNavigation.classList.contains("main-nav--closed")) {
+    mainNavigation.classList.remove("main-nav--closed");
+    mainNavigation.classList.add("main-nav--opened");
   } else {
-    this.classList.remove("main-nav__toggle--active");
-    this.classList.add("main-nav__toggle--inactive");
-
-    mainNav.classList.remove("main-nav__menu-wrapper--opened");
-    mainNav.classList.add("main-nav__menu-wrapper--closed");
+    mainNavigation.classList.remove("main-nav--opened");
+    mainNavigation.classList.add("main-nav--closed");
   }
 
 });
