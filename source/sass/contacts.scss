@@ -1,16 +1,10 @@
 .contacts {
-  padding-top: 34px;
+  padding-top: 35px;
   padding-bottom: 39px;
-}
-
-.contacts__container {
-  width: 100%;
-  padding: 0;
 }
 
 .contacts__title {
   margin: 0 0 23px;
-  padding: 0 30px;
 
   font-family: $bold;
   font-size: 18px;
@@ -19,7 +13,6 @@
 
 .contacts__list {
   margin-bottom: 40px;
-  padding: 0 30px;
 
   line-height: 30px;
   color: $second-color;
@@ -49,7 +42,8 @@
 
 .contacts__map-container {
   width: 320px;
-  margin-bottom: 39px;
+  margin-left: -30px;
+  margin-bottom:39px;
 }
 
 .contacts__map-image {
@@ -66,10 +60,11 @@
 @media (min-width: $tablet-width) {
   .contacts {
     padding-top: 85px;
+    padding-bottom: 57px;
   }
 
   .contacts__title {
-    margin-left: 46px;
+    margin: 0 0 45px -5px;
     padding: 0;
 
     font-size: 43px;
@@ -77,13 +72,32 @@
   }
 
   .contacts__list {
-    margin-left: 50px;
+    font-size: 17px;
+
+    margin-bottom: 52px;
     padding: 0;
+  }
+
+  .contacts__row {
+    box-sizing: border-box;
+    width: 330px;
+    margin-left: -3px;
+    margin-bottom: 0;
+    padding-right: 30px;
+  }
+
+  .contacts__type {
+    width: 60px;
+  }
+
+  .contacts__info {
+    padding: 0 0 0 17px;
   }
 
   .contacts__map-container {
     width: 768px;
     margin-bottom: 55px;
+    margin-left: -50px;
   }
 
   .contacts__map-image {
@@ -99,8 +113,10 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
+    position: relative;
+
     padding-top: 141px;
-    padding-bottom: 108px;
+    padding-bottom: 105px;
   }
 
   .contacts__container {
@@ -129,7 +145,9 @@
   }
 
   .contacts__row {
+    width: 100%;
     margin-bottom: 26px;
+    padding-right: 0;
   }
 
   .contacts__type {
@@ -137,12 +155,12 @@
   }
 
   .contacts__info {
-    padding: 0 0 0 10px;
+    padding: 0 0 0 14px;
   }
 
   .contacts__map-container {
     position: absolute;
-    top: -70px;
+    top: 70px;
     right: 50px;
 
     width: 525px;

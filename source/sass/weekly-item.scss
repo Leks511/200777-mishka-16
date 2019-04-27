@@ -54,12 +54,13 @@
 }
 
 .weekly-item__photo {
+  display: block;
   width: 260px;
   height: 315px;
 }
 
 .weekly-item__price {
-  margin: 0 auto 24px;
+  margin: 0 auto 25px;
   width: 260px;
 
   text-align: center;
