@@ -1,9 +1,3 @@
-.arrow-buttons {
-  width: 260px;
-  margin-bottom: 38px;
-  display: flex;
-}
-
 .arrow-buttons__arrow {
   width: 131px;
   height: 52px;
@@ -13,7 +7,36 @@
   border: 1px solid #ececec;
   background: transparent;
 
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &--prev {
     margin-right: -1px;
+  }
+}
+
+.arrow-buttons__icon {
+  width: 50px;
+  height: 26px;
+  margin-top: 4px;
+}
+
+@media (min-width: $tablet-width) {
+  .arrow-buttons__arrow {
+    width: 87px;
+
+    border: none;
+
+    &--prev {
+      margin-right: 0;
+    }
   }
 }

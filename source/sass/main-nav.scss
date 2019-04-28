@@ -8,6 +8,15 @@
 .main-nav__logo-image {
   width: 86px;
   height: 35px;
+
+  &:focus,
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__news-list {

@@ -8,7 +8,7 @@
 }
 
 .feedbacks__list {
-  margin: 0 0 28px;
+  margin: 0 0 30px;
   padding: 0;
 
   list-style: none;
@@ -47,10 +47,16 @@
   }
 }
 
+.feedbacks__arrow-buttons {
+  width: 260px;
+  margin-bottom: 38px;
+  display: flex;
+}
+
 @media (min-width: $tablet-width) {
   .feedbacks {
     padding-top: 77px;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
 
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
@@ -81,23 +87,30 @@
   }
 
   .feedbacks__text {
-    margin: 0 0 58px;
+    margin: 0 0 56px;
 
     font-size: 17px;
   }
 
   .feedbacks__author {
-    margin: 0;
+    margin: 0 0 4px;
 
     font-family: $bold;
     font-size: 18px;
     line-height: 24px;
   }
 
+  .feedbacks__link {
+    font-size: 17px;
+  }
+
   .feedbacks__arrow-buttons {
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: 50px;
+    bottom: 34px;
+
+    width: 175px;
+    margin-bottom: 0;
   }
 
   .feedbacks__button {
@@ -153,5 +166,9 @@
 
   .feedbacks__button {
     margin-top: 8px;
+  }
+
+  .feedbacks__arrow-buttons {
+    bottom: 193px;
   }
 }

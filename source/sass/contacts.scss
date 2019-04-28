@@ -1,10 +1,10 @@
 .contacts {
-  padding-top: 35px;
-  padding-bottom: 39px;
+  padding-top: 34px;
+  padding-bottom: 38px;
 }
 
 .contacts__title {
-  margin: 0 0 23px;
+  margin: 0 0 22px;
 
   font-family: $bold;
   font-size: 18px;
@@ -31,12 +31,23 @@
 
 .contacts__info {
   padding: 0 0 0 20px;
+}
 
-  &--link {
-    display: block;
+.contacts__email {
+  display: block;
 
-    color: $second-color;
-    border-bottom: 1px solid #62d1ba;
+  color: $second-color;
+  text-decoration: none;
+
+  border-bottom: 1px solid #62d1ba;
+
+  &:focus,
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -59,7 +70,7 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    padding-top: 85px;
+    padding-top: 62px;
     padding-bottom: 57px;
   }
 
@@ -132,8 +143,8 @@
   .contacts {
     position: relative;
 
-    padding-top: 141px;
-    padding-bottom: 105px;
+    padding-top: 138px;
+    padding-bottom: 104px;
   }
 
   .contacts__container {
@@ -183,7 +194,7 @@
 
   .contacts__map-container {
     position: absolute;
-    top: 70px;
+    top: 67px;
     right: 50px;
 
     width: 525px;

@@ -8,11 +8,20 @@
 }
 
 .wares__item {
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.wares__item:focus .wares__item-info,
+.wares__item:hover .wares__item-info {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.wares__item:active .wares__item-info {
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 .wares__item-photo {
@@ -50,6 +59,8 @@
 }
 
 .wares__item-buying {
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 21px 0 27px;
 
@@ -61,6 +72,21 @@
   border-top: 1px solid #ececec;
 }
 
+.wares__buy-icon {
+  opacity: 0.2;
+
+  &:focus,
+  &:hover {
+    opacity: 1;
+    fill: #63d1bb;
+  }
+
+  &:active {
+    opacity: 0.3;
+    fill: #63d1bb;
+  }
+}
+
 .wares-item__price {
   font-family: $bold;
 }
@@ -69,21 +95,6 @@
   position: relative;
 
   text-decoration: none;
-
-  &::after {
-    content: "";
-
-    position: absolute;
-    left: 0;
-    right: 0;
-
-    width: 20px;
-    height: 19px;
-
-    background-image: url("../img/icon-cart.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
 }
 
 @media (min-width: $tablet-width) {
