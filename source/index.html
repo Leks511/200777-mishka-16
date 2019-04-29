@@ -10,8 +10,8 @@
 
     <header class="page-header">
 
-      <nav class="page-header__main-nav main-nav">
-        <button class="main-nav__toggle main-nav__toggle--inactive" type="button">
+      <nav class="page-header__main-nav main-nav main-nav--opened">
+        <button class="main-nav__toggle main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
           <span class="main-nav__toggle-line"></span>
         </button>
@@ -191,7 +191,9 @@
         </table>
         <div class="contacts__map-container">
           <picture>
-            <img class="contacts__map-image" width="322" height="457" src="img/map-mobile@1x.jpg"
+            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+            <img class="contacts__map-image" width="322" height="457" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x"
               alt="Наш адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
           </picture>
         </div>
@@ -292,5 +294,7 @@
 
     </footer>
 
+    <script src="js/mobile-menu.js"></script>
+    <script src="js/picturefill.js"></script>
   </body>
 </html>
