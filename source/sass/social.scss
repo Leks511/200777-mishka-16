@@ -5,6 +5,8 @@
 .social__link {
   display: block;
 
+  cursor: pointer;
+
   &--inst {
     margin-top: 6px;
     margin-right: 3px;
@@ -13,5 +15,16 @@
   &--tw {
     margin-top: 5px;
     margin-right: 5px;
+  }
+}
+
+.social__icon {
+  &:focus,
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
