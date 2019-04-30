@@ -15,6 +15,17 @@
 
   background-color: transparent;
   border: 2px solid $second-color;
+
+  &:focus,
+  &:hover {
+    color: rgba(255, 255, 255, 1);
+
+    background-color: $second-color;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {

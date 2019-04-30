@@ -2,6 +2,18 @@
   position: relative;
 }
 
+.form__label:hover .form__radio-pseudo,
+.form__label:focus .form__radio-pseudo,
+.form__label:hover .form__checkbox-pseudo,
+.form__label:focus .form__checkbox-pseudo {
+  border-color: #62d1ba;
+}
+
+.form__label:active .form__radio-pseudo,
+.form__label:active .form__checkbox-pseudo {
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
 .form__part-header {
   position: relative;
 
@@ -35,6 +47,12 @@
   border: none;
   border-bottom: 2px solid #000000;
   background-color: transparent;
+
+  &:focus,
+  &:hover,
+  &:active {
+    border-color: #62d1ba;
+  }
 }
 
 .form__part--type {
@@ -185,6 +203,12 @@
   color: $second-color;
 
   border: 2px solid #000000;
+
+  &:focus,
+  &:hover,
+  &:active {
+    border-color: #62d1ba;
+  }
 }
 
 .form__notice {

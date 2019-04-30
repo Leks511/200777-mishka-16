@@ -7,13 +7,13 @@
 }
 
 .index-title__intro {
-  min-height: 281px;
+  min-height: 282px;
 
   background-color: #f9f9f9;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center -17px;
-  background-size: 570px;
+  background-position: center -18px;
+  background-size: 578px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
@@ -44,7 +44,8 @@
   position: relative;
 
   display: block;
-  padding: 28px 30px;
+  min-height: 83px;
+  padding: 10px;
 
   color: rgba(255, 255, 255, 1);
   font-family: "Open Sans Bold", "Arial", sans-serif;
@@ -52,20 +53,21 @@
   line-height: 24px;
   font-weight: 700;
   text-decoration: none;
+
+  &::after {
+    opacity: 0.5;
+  }
 }
 
-.index-title__things-link-text {
-  display: block;
-  max-width: 130px;
-}
+.index-title__things-link:focus,
+.index-title__things-link:hover {
+  min-height: 88px;
+  margin-top: -5px;
 
-.index-title__things-link::after {
-  opacity: 0.5;
-}
-
-.index-title__things-link:hover::after,
-.index-title__things-link:focus::after {
-  opacity: 0.7;
+  &::after,
+  &::after {
+    opacity: 0.7;
+  }
 }
 
 .index-title__things-link:active {
@@ -132,6 +134,13 @@
   }
 }
 
+.index-title__things-link-text {
+  display: block;
+  max-width: 130px;
+  margin-top: 17px;
+  margin-left: 19px;
+}
+
 @media (min-width: $tablet-width) {
   .index-title {
     background-image: url("../img/hero-tablet@1x.jpg");
@@ -167,10 +176,16 @@
   }
 
   .index-title__things-link {
-    padding: 28px 36px;
+    min-height: 99px;
 
     font-size: 20px;
     line-height: 30px;
+
+    &:hover,
+    &:focus {
+      min-height: 104px;
+      margin-top: -5px;
+    }
 
     &--interior::after {
       top: 30px;
@@ -181,6 +196,11 @@
       top: 31px;
       right: 34px;
     }
+  }
+
+  .index-title__things-link-text {
+    margin-top: 19px;
+    margin-left: 25px;
   }
 }
 
