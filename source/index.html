@@ -327,6 +327,44 @@
 
     </footer>
 
+    <section class="modal">
+      <div class="modal__content">
+        <div class="modal__container">
+          <h2 class="modal__heading">
+            Добавить в корзину
+          </h2>
+          <form class="modal__cart-form cart-form">
+            <legend class="cart-form__legend">
+              Выберите размер:
+            </legend>
+            <ul class="cart-form__sizes">
+              <li class="cart-form__size">
+                <input class="visually-hidden" id="size-small" type="radio" name="size">
+                <label class="cart-form__label" for="size-small">
+                  <span class="visually-hidden">Маленький размер</span>
+                  S
+                </label>
+              </li>
+              <li class="cart-form__size">
+                <input class="visually-hidden" id="size-medium" type="radio" name="size">
+                <label class="cart-form__label" for="size-medium">
+                  <span class="visually-hidden">Средний размер</span>
+                  M
+                </label>
+              </li>
+              <li class="cart-form__size">
+                <input class="visually-hidden" id="size-large" type="radio" name="size">
+                <label class="cart-form__label" for="size-large">
+                  <span class="visually-hidden">Большой размер</span>
+                  L
+                </label>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </section>
+
     <script src="js/mobile-menu.js"></script>
     <script src="js/picturefill.js"></script>
   </body>
