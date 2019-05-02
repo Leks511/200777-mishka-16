@@ -4,6 +4,8 @@
 }
 
 .manufacture__header-text {
+  position: relative;
+
   display: block;
   padding-left: 56px;
   margin: 0 0 23px;
@@ -11,6 +13,21 @@
   font-family: $bold;
   font-size: 17px;
   line-height: 24px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 6px;
+    left: 0;
+
+    width: 32px;
+    height: 32px;
+
+    background-image: url("../img/icon-video.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
 }
 
 .manufacture__info {
@@ -29,6 +46,8 @@
 }
 
 .manufacture__video-container {
+  position: relative;
+
   width: 260px;
   margin: 0 -34px 27px;
 }
@@ -37,6 +56,29 @@
   display: block;
   width: 260px;
   height: 150px;
+}
+
+.manufacture__video-play-button {
+  position: absolute;
+  top: 37px;
+  left: 79px;
+
+  padding: 0;
+
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.manufacture__video-play-button:focus .manufacture__vadeo-play-icon,
+.manufacture__video-play-button:hover .manufacture__vadeo-play-icon {
+  transform: scale(1.2);
+}
+
+.manufacture__video-play-button:active .manufacture__vadeo-play-icon {
+  opacity: 0.3;
+
+  transform: scale(0.8);
 }
 
 .manufacture__intro-text {
@@ -84,8 +126,12 @@
     height: 455px;
   }
 
+  .manufacture__video-play-button {
+    top: 189px;
+    left: 283px;
+  }
+
   .manufacture__header-text {
-    display: block;
     margin-bottom: 32px;
     padding-left: 65px;
     padding-bottom: 0;
@@ -93,6 +139,11 @@
     font-family: $bold;
     font-size: 20px;
     line-height: 24px;
+
+    &::before {
+      top: -4px;
+      left: 1px;
+    }
   }
 
   .manufacture__intro-text {
@@ -130,6 +181,11 @@
   .manufacture__header-text {
     width: 230px;
     padding-left: 0;
+
+    &::before {
+      top: -55px;
+      left: 2px;
+    }
   }
 
   .manufacture__intro-text {
@@ -144,6 +200,10 @@
   .manufacture__video {
     width: 682px;
     height: 455px;
+  }
+
+  .manufacture__video-play-button {
+    left: 291px;
   }
 
   .manufacture__button {
