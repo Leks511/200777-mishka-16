@@ -3,6 +3,26 @@
   padding-bottom: 51px;
 }
 
+.feedbacks__container {
+  position: relative;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -66px;
+
+    width: 100%;
+    height: 23px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    background-size: contain;
+  }
+}
+
 .feedbacks__title {
   margin: 0 0 24px;
 }
@@ -74,6 +94,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
+
+    &::after {
+      bottom: -108px;
+
+      width: 768px;
+    }
   }
 
   .feedbacks__title {
