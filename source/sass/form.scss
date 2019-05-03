@@ -2,10 +2,10 @@
   position: relative;
 }
 
-.form__label:hover .form__radio-pseudo,
-.form__label:focus .form__radio-pseudo,
-.form__label:hover .form__checkbox-pseudo,
-.form__label:focus .form__checkbox-pseudo {
+.form__radio:hover + .form__radio-pseudo,
+.form__radio:focus + .form__radio-pseudo,
+.form__checkbox:hover + .form__checkbox-pseudo,
+.form__checkbox:focus + .form__checkbox-pseudo {
   border-color: #62d1ba;
 }
 
@@ -17,11 +17,26 @@
 .form__part-header {
   position: relative;
 
+  display: flex;
+
   font-family: $bold;
   font-size: 17px;
   line-height: 16px;
   color: #63d1bb;
   text-transform: uppercase;
+}
+
+.form__part-name {
+  padding-right: 26px;
+}
+
+.form__header-line {
+  width: 1px;
+  height: 1px;
+  margin-top: 7px;
+  flex-grow: 1;
+
+  background-color: #62d1ba;
 }
 
 .form__options-list {
@@ -79,7 +94,7 @@
   }
 }
 
-.form__part--type .form__radio-pseudo {
+.form__radio-pseudo {
   position: absolute;
   top: -6px;
   left: -62px;
@@ -92,7 +107,7 @@
   border-radius: 50%;
 }
 
-.form__part--type .form__radio:checked + .form__radio-pseudo::after {
+.form__radio:checked + .form__radio-pseudo::after {
   content: "";
 
   position: absolute;
@@ -264,6 +279,10 @@
   .form__part-container {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .form__header-line {
+    display: none;
   }
 
   .form__options-list {
