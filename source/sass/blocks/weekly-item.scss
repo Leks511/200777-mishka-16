@@ -1,15 +1,25 @@
 .weekly-item {
-  position: relative;
-
   width: 100%;
   padding: 5px 0 45px;
+}
+
+.weekly-item__container {
+  position: relative;
 
   &::after {
     content: "";
 
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -60px;
+
+    width: 100%;
+    height: 23px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    background-size: contain;
   }
 }
 
@@ -154,6 +164,14 @@
 @media (min-width: $desktop-width) {
   .weekly-item {
     padding: 123px 0 96px;
+  }
+
+  .weekly-item__container {
+    &::after {
+      left: 50px;
+      bottom: -96px;
+      width: 1050px;
+    }
   }
 
   .weekly-item__title {

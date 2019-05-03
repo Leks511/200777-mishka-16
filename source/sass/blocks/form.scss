@@ -2,10 +2,10 @@
   position: relative;
 }
 
-.form__label:hover .form__radio-pseudo,
-.form__label:focus .form__radio-pseudo,
-.form__label:hover .form__checkbox-pseudo,
-.form__label:focus .form__checkbox-pseudo {
+.form__radio:hover + .form__radio-pseudo,
+.form__radio:focus + .form__radio-pseudo,
+.form__checkbox:hover + .form__checkbox-pseudo,
+.form__checkbox:focus + .form__checkbox-pseudo {
   border-color: #62d1ba;
 }
 
@@ -17,11 +17,26 @@
 .form__part-header {
   position: relative;
 
+  display: flex;
+
   font-family: $bold;
   font-size: 17px;
   line-height: 16px;
   color: #63d1bb;
   text-transform: uppercase;
+}
+
+.form__part-name {
+  padding-right: 26px;
+}
+
+.form__header-line {
+  width: 1px;
+  height: 1px;
+  margin-top: 7px;
+  flex-grow: 1;
+
+  background-color: #62d1ba;
 }
 
 .form__options-list {
@@ -55,6 +70,13 @@
   }
 }
 
+.form__data-field:focus + .form__icon,
+.form__data-field:hover + .form__icon,
+.form__data-field:active + .form__icon {
+  fill: #62d1ba;
+  opacity: 1;
+}
+
 .form__part--type {
   margin-bottom: 45px;
 }
@@ -72,7 +94,7 @@
   }
 }
 
-.form__part--type .form__radio-pseudo {
+.form__radio-pseudo {
   position: absolute;
   top: -6px;
   left: -62px;
@@ -85,7 +107,7 @@
   border-radius: 50%;
 }
 
-.form__part--type .form__radio:checked + .form__radio-pseudo::after {
+.form__radio:checked + .form__radio-pseudo::after {
   content: "";
 
   position: absolute;
@@ -150,6 +172,35 @@
 
 .form__part--name .form__part-header {
   margin: 0 0 29px;
+}
+
+.form__row {
+  &--phone,
+  &--email {
+    position: relative;
+  }
+}
+
+.form__icon {
+  position: absolute;
+
+  opacity: 0.2;
+
+  &--phone {
+    top: 33px;
+    right: 8px;
+
+    width: 25px;
+    height: 24px;
+  }
+
+  &--mail {
+    top: 33px;
+    right: 4px;
+
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .form__part--name .form__row {
@@ -228,6 +279,10 @@
   .form__part-container {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .form__header-line {
+    display: none;
   }
 
   .form__options-list {
@@ -372,6 +427,18 @@
     margin: 0 0 42px;
   }
 
+  .form__icon {
+    &--phone {
+      top: -7px;
+      right: 26px;
+    }
+
+    &--mail {
+      top: -7px;
+      right: 22px;
+    }
+  }
+
   .form__part--contacts .form__part-header {
     margin: 0;
   }
@@ -455,6 +522,18 @@
   .form__part--contacts .form__data-field {
     width: 700px;
     margin-right: 175px;
+  }
+
+  .form__icon {
+    &--phone {
+      top: -7px;
+      right: 183px;
+    }
+
+    &--mail {
+      top: -7px;
+      right: 179px;
+    }
   }
 
   .form__part--additional {

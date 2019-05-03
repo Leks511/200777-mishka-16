@@ -52,9 +52,18 @@
 }
 
 .contacts__map-container {
+  position: relative;
+
   width: 320px;
   margin-left: -30px;
   margin-bottom: 39px;
+}
+
+.contacts__map-pin {
+  position: absolute;
+  top: 145px;
+  left: 138px;
+  z-index: 1;
 }
 
 .contacts__map-image {
@@ -128,6 +137,11 @@
     margin-left: -50px;
   }
 
+  .contacts__map-pin {
+    top: 138px;
+    left: 363px;
+  }
+
   .contacts__map-image {
     display: block;
     width: 768px;
@@ -199,6 +213,11 @@
 
     width: 525px;
     margin: 0;
+  }
+
+  .contacts__map-pin {
+    top: 145px;
+    left: 238px;
   }
 
   .contacts__button {
