@@ -166,6 +166,14 @@
     padding: 123px 0 96px;
   }
 
+  .weekly-item__container {
+    &::after {
+      left: 50px;
+      bottom: -96px;
+      width: 1050px;
+    }
+  }
+
   .weekly-item__title {
     position: relative;
     z-index: 1;
