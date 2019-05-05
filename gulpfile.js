@@ -25,6 +25,11 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
+gulp.task("images", function() {
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
+    .pipe(gulp.dest("source/img"));
+});
+
 gulp.task("server", function () {
   server.init({
     server: "source/",
