@@ -17,7 +17,7 @@ var htmlmin = require("gulp-htmlmin");
 var include = require("posthtml-include");
 var del = require("del");
 var uglify = require("gulp-uglify");
-var pipeline = require("readable-stream").pipeline;
+var concat = require("gulp-concat");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -71,6 +71,7 @@ gulp.task("html", function() {
 
 gulp.task("scripts", function() {
   return gulp.src("source/js/*.js")
+    .pipe(concat("script.min.js"))
     .pipe(uglify())
     .pipe(gulp.dest("build/js"));
 });

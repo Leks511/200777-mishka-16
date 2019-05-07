@@ -3,9 +3,16 @@
 
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.min.css">
     <title>HTML Academy: Мишка</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="preload" href="fonts/opensans.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" as="style" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link href="js/script.min.js" rel="preload" as="script">
   </head>
 
   <body>
@@ -90,7 +97,7 @@
         <div class="catalog__container container">
           <ul class="catalog__list wares">
             <li class="wares__item">
-              <a class="wares__item-photo-container" href="#">
+              <a class="wares__item-photo-container" href="item-details.html">
                 <picture>
                   <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
@@ -104,7 +111,7 @@
               <div class="wares__item-info">
                 <div class="wares__item-description">
                   <h2 class="wares__item-name">
-                    <a class="typically-link" href="#">Зайчик-попрыгайчик</a>
+                    <a class="typically-link" href="item-details.html">Зайчик-попрыгайчик</a>
                   </h2>
                   <p class="wares__item-parameters">Рост 30 см, вес 200 г</p>
                 </div>
@@ -120,7 +127,7 @@
               </div>
             </li>
             <li class="wares__item">
-              <a class="wares__item-photo-container" href="#">
+              <a class="wares__item-photo-container" href="item-details.html">
                 <picture>
                   <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
@@ -134,7 +141,7 @@
               <div class="wares__item-info">
                 <div class="wares__item-description">
                   <h2 class="wares__item-name">
-                    <a class="typically-link" href="#">Корзинка для белья</a>
+                    <a class="typically-link" href="item-details.html">Корзинка для белья</a>
                   </h2>
                   <p class="wares__item-parameters">Диаметр 15 см, высота 10 см</p>
                 </div>
@@ -150,7 +157,7 @@
               </div>
             </li>
             <li class="wares__item">
-              <a class="wares__item-photo-container" href="#">
+              <a class="wares__item-photo-container" href="item-details.html">
                 <picture>
                   <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
@@ -164,7 +171,7 @@
               <div class="wares__item-info">
                 <div class="wares__item-description">
                   <h2 class="wares__item-name">
-                    <a class="typically-link" href="#">Большая корзинка для игрушек</a>
+                    <a class="typically-link" href="item-details.html">Большая корзинка для игрушек</a>
                   </h2>
                   <p class="wares__item-parameters">Диаметр 30 см, высота 30 см</p>
                 </div>
@@ -304,9 +311,7 @@
       </div>
     </section>
 
-    <script src="js/mobile-menu.js"></script>
-    <script src="js/buying.js"></script>
-    <script src="js/picturefill.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 
 </html>
