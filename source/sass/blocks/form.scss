@@ -12,7 +12,7 @@
 .form__label:active .form__radio-pseudo,
 .form__label:active .form__checkbox-pseudo,
 .form__label:disabled .form__radio-pseudo,
-.form__label:disabled .form__checkbox-pseudo, {
+.form__label:disabled .form__checkbox-pseudo {
   border-color: rgba(0, 0, 0, 0.3);
 }
 
