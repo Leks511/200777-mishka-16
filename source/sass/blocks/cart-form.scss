@@ -6,7 +6,7 @@
 }
 
 .cart-form__legend {
-  margin-bottom: 24px;
+  margin: 0 auto 24px;
 
   font-size: 15px;
   line-height: 30px;
@@ -83,7 +83,7 @@
 
 @media (min-width: $tablet-width) {
   .cart-form__legend {
-    margin-bottom: 23px;
+    margin: 0 auto 23px;
 
     font-size: 17px;
   }

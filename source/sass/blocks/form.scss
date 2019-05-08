@@ -10,7 +10,9 @@
 }
 
 .form__label:active .form__radio-pseudo,
-.form__label:active .form__checkbox-pseudo {
+.form__label:active .form__checkbox-pseudo,
+.form__label:disabled .form__radio-pseudo,
+.form__label:disabled .form__checkbox-pseudo, {
   border-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -359,6 +361,10 @@
     width: 238px;
     margin-bottom: 58px;
     padding-left: 80px;
+
+    &:last-child {
+      margin-bottom: 58px;
+    }
   }
 
   .form__part--color .form__checkbox-pseudo {

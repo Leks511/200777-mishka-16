@@ -17,7 +17,6 @@ var htmlmin = require("gulp-htmlmin");
 var include = require("posthtml-include");
 var del = require("del");
 var uglify = require("gulp-uglify");
-var concat = require("gulp-concat");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -27,7 +26,6 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
@@ -71,7 +69,6 @@ gulp.task("html", function() {
 
 gulp.task("scripts", function() {
   return gulp.src("source/js/*.js")
-    .pipe(concat("script.min.js"))
     .pipe(uglify())
     .pipe(gulp.dest("build/js"));
 });
@@ -80,7 +77,6 @@ gulp.task("copy", function() {
   return gulp.src([
       "source/fonts/**/*.{woff,woff2}",
       "source/images/**/*.{img,png,svg}",
-      "source/js/**/*.js",
       "source/*.ico"
     ], {
       base: "source"

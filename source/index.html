@@ -12,7 +12,9 @@
     <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" as="style" href="css/style.min.css">
     <link rel="stylesheet" href="css/style.min.css">
-    <link href="js/script.min.js" rel="preload" as="script">
+    <link rel="preload" href="js/mobile-menu.js" as="script">
+    <link rel="preload" href="js/index-buying.js" as="script">
+    <link rel="preload" href="js/picturefill.js" as="script">
   </head>
 
   <body>
@@ -62,7 +64,7 @@
             <a class="user-interface__link user-interface__link--cart typically-link" href="#">
               Корзина: пока пуста
             </a>
-            <svg class="user-interface__icon" width="20px" height="19px">
+            <svg class="user-interface__icon" width="20" height="19">
               <use xlink:href="#icon-cart"></use>
             </svg>
           </li>
@@ -176,13 +178,13 @@
           <div class="feedbacks__arrow-buttons arrow-buttons">
             <button class="arrow-buttons__arrow arrow-buttons__arrow--prev" type="button">
               <span class="visually-hidden">Предыдущий отзыв</span>
-              <svg class="arrow-buttons__icon arrow-buttons__icon--left" width="50px" height="26.003px">
+              <svg class="arrow-buttons__icon arrow-buttons__icon--left" width="50" height="26">
                 <use xlink:href="#icon-left-arrow"></use>
               </svg>
             </button>
             <button class="arrow-buttons__arrow arrow-buttons__arrow--next" type="button">
               <span class="visually-hidden">Следующий отзыв</span>
-              <svg class="arrow-buttons__icon arrow-buttons__icon--right" width="50px" height="26.003px">
+              <svg class="arrow-buttons__icon arrow-buttons__icon--right" width="50" height="26">
                 <use xlink:href="#icon-right-arrow"></use>
               </svg>
             </button>
@@ -210,7 +212,7 @@
           </tr>
         </table>
         <div class="contacts__map-container">
-          <svg class="contacts__map-pin" width="66px" height="101px">
+          <svg class="contacts__map-pin" width="66" height="101">
             <use xlink:href="#icon-map-pin"></use>
           </svg>
           <picture>
@@ -234,7 +236,8 @@
 
       <div class="page-footer__container container">
         <a class="page-footer__logo">
-          <svg class="page-footer__logo-image" width="102px" height="34px">
+          <span class="visually-hidden">Логотип магазина "Мишка"</span>
+          <svg class="page-footer__logo-image" width="102" height="34">
             <use xlink:href="#logo-footer"></use>
           </svg>
         </a>
@@ -243,7 +246,7 @@
           <li class="social__item social__item--inst">
             <a class="social__link social__link--inst" href="#">
               <span class="visually-hidden">Инстаграм</span>
-              <svg class="social__icon social__icon--inst" width="22px" height="21px">
+              <svg class="social__icon social__icon--inst" width="22" height="21">
                 <use xlink:href="#icon-insta"></use>
               </svg>
             </a>
@@ -251,7 +254,7 @@
           <li class="social__item social__item--fb">
             <a class="social__link social__link--fb" href="#">
               <span class="visually-hidden">Фейсбук</span>
-              <svg class="social__icon social__icon--fb" width="15px" height="28px">
+              <svg class="social__icon social__icon--fb" width="15" height="28">
                 <use xlink:href="#icon-fb"></use>
               </svg>
             </a>
@@ -259,7 +262,7 @@
           <li class="social__item social__item--tw">
             <a class="social__link social__link--tw" href="#">
               <span class="visually-hidden">Твиттер</span>
-              <svg class="social__icon social__icon--tw" width="23px" height="20px">
+              <svg class="social__icon social__icon--tw" width="23" height="20">
                 <use xlink:href="#icon-twitter"></use>
               </svg>
             </a>
@@ -284,7 +287,7 @@
           <h2 class="modal__heading">
             Добавить в корзину
           </h2>
-          <form class="modal__cart-form cart-form">
+          <form class="modal__cart-form cart-form" action="https://echo.htmlacademy.ru">
             <fieldset class="cart-form__sizes">
               <legend class="cart-form__legend">
                 Выберите размер:
@@ -319,6 +322,8 @@
       </div>
     </section>
 
-    <script src="js/script.min.js"></script>
+    <script src="js/picturefill.js"></script>
+    <script src="js/index-buying.js"></script>
+    <script src="js/mobile-menu.js"></script>
   </body>
 </html>
