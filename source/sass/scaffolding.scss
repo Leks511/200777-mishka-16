@@ -1,21 +1,3 @@
-@font-face {
-  font-family: "Open Sans";
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-  src: url("../fonts/opensans.woff") format("woff"),
-    url("../fonts/opensans.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Open Sans Bold";
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-  src: url("../fonts/opensansbold.woff") format("woff"),
-    url("../fonts/opensansbold.woff2") format("woff2");
-}
-
 body {
   position: relative;
 
@@ -26,7 +8,7 @@ body {
   color: $main-color;
   font-size: 15px;
   line-height: 24px;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: $main-font;
   font-style: normal;
 
   background-color: #f9f9f9;
@@ -35,41 +17,4 @@ body {
 img {
   max-width: 100%;
   height: auto;
-}
-
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.container {
-  width: 260px;
-  margin: 0 auto;
-  padding: 0 30px;
-}
-
-@media (min-width: $tablet-width) {
-  .container {
-    width: 668px;
-    padding: 0 50px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .container {
-    width: 1050px;
-    padding: 0 50px;
-  }
 }

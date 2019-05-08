@@ -48,7 +48,6 @@
   margin: 0;
   margin-bottom: 5px;
 
-  font-family: $bold;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
@@ -92,7 +91,7 @@
 }
 
 .wares-item__price {
-  font-family: $bold;
+  font-weight: 700;
 }
 
 .wares__item-buy {
