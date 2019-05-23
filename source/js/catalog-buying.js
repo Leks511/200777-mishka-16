@@ -10,19 +10,25 @@ function addBuyHandler(item) {
   })
 }
 
-for (var i = 0; i < buyButtons.length; i++) {
-  addBuyHandler(buyButtons[i]);
+if (buyButtons) {
+  for (var i = 0; i < buyButtons.length; i++) {
+    addBuyHandler(buyButtons[i]);
+  }
 }
 
-modalSubmit.addEventListener("click", function () {
-  modal.classList.remove("modal--show");
-});
-
-modal.addEventListener("click", function(evt) {
-  if (evt.target === modal) {
+if (modalSubmit) {
+  modalSubmit.addEventListener("click", function () {
     modal.classList.remove("modal--show");
-  }
-});
+  });
+}
+
+if (modal) {
+  modal.addEventListener("click", function (evt) {
+    if (evt.target === modal) {
+      modal.classList.remove("modal--show");
+    }
+  });
+}
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
